@@ -1,21 +1,16 @@
-
 .about {
-
   padding-top: 100px;
   width: 100%;
-  min-height: 500px; 
+  min-height: 500px;
   background-color: #f8f9fc;
 }
 
 .about-text {
- 
-  text-align: left; 
-  
+  text-align: left;
 }
 
 /* Heading */
 .about-text h2 {
-  
   position: relative;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -24,16 +19,20 @@
   line-height: 100%;
   letter-spacing: 0;
   margin-bottom: 20px;
-  left:49px ;
+  left: 49px;
 
   /* Gradient Text */
-  background: linear-gradient(90deg, #1C1559 15.39%, #3C2EBF 42.31%, #ED1C24 80.76%);
+  background: linear-gradient(
+    90deg,
+    #1C1559 15.39%,
+    #3C2EBF 42.31%,
+    #ED1C24 80.76%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-
-  display: inline-block; /* gradient only over text */
+  display: inline-block;
 }
 
 /* Paragraph */
@@ -43,34 +42,27 @@
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   line-height: 1.8;
-  color: #444;
   width: 96%;
   background: linear-gradient(90deg, #1C1559 0%, #3C2EBF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-  left:49px ;
-
+  left: 49px;
 }
 
-
-
+/* Image */
 .about-image img {
   position: relative;
   width: 1021px;
   height: 454px;
-  left:49px ;
+  left: 49px;
   object-fit: cover;
   border-radius: 10px;
-
-}
-/* Optional fade-in animation */
-.about-text {
-  animation: fadeIn 1.2s ease-in-out;
 }
 
-.rectangle4  {
+/* Button */
+.rectangle4 {
   width: 250px;
   top: -60px;
   position: relative;
@@ -78,20 +70,17 @@
   height: 60px;
   opacity: 1;
   border-radius: 60px;
-  border: 8px solid transparent; /* important for gradient border */
-
-  background: 
-    linear-gradient(white, white) padding-box,
+  border: 8px solid transparent;
+  background: linear-gradient(white, white) padding-box,
     linear-gradient(90deg, #3C2EBF 16.82%, #ED1C24 100%) border-box;
-
   color: #1C1559;
   font-size: 30px;
-  font-weight: 600px;
+  font-weight: 600;
   text-align: center;
   cursor: pointer;
-  
 }
 
+/* Animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -103,17 +92,89 @@
   }
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .about {
-    padding: 60px 15px;
-  }
+/* ✅ Responsive Breakpoints (Only positioning & size adjustments) */
 
+/* Laptop */
+@media (max-width: 1200px) {
   .about-text h2 {
-    font-size: 32px;
+    font-size: 36px;
+    left: 30px;
   }
+  .about-text p {
+    font-size: 17px;
+    left: 30px;
+  }
+  .about-image img {
+    width: 90%;
+    left: 30px;
+    height: auto;
+  }
+  .rectangle4 {
+    left: 70%;
+    transform: translateX(-50%);
+    font-size: 26px;
+  }
+}
 
+/* Tablet */
+@media (max-width: 992px) {
+  .about {
+    text-align: center;
+    padding: 60px 20px;
+  }
+  .about-text h2,
+  .about-text p {
+    left: 0;
+    text-align: center;
+    width: 100%;
+  }
+  .about-image img {
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+  .rectangle4 {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .about-text h2 {
+    font-size: 28px;
+  }
   .about-text p {
     font-size: 16px;
+    padding-top: 30px;
+  }
+  .about-image img {
+    width: 100%;
+    height: auto;
+  }
+  .rectangle4 {
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    top: 30px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .about {
+    padding-top: 60px;
+  }
+  .about-text h2 {
+    font-size: 24px;
+  }
+  .about-text p {
+    font-size: 14px;
+  }
+  .rectangle4 {
+    width: 180px;
+    height: 45px;
+    font-size: 18px;
   }
 }

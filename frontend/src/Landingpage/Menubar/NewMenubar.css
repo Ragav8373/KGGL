@@ -1,4 +1,4 @@
-/* Navbar */
+/* 🌟 Navbar Base */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -6,16 +6,14 @@
   padding: 15px 60px;
   background: #ffffff;
   color: #1C1559;
-  position: relative;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-weight: 300;
   font-size: 24px;
-  line-height: 100%;
-  text-align: center;
   z-index: 1000;
+  position: relative;
 }
 
-/* Logo section */
+/* 🌟 Logo Section */
 .logo-container {
   display: flex;
   align-items: center;
@@ -36,7 +34,7 @@
   color: #1C1559;
 }
 
-/* Nav Links */
+/* 🌟 Nav Links */
 .nav-links {
   list-style: none;
   display: flex;
@@ -46,26 +44,23 @@
 .nav-links li a {
   font-weight: 500;
   font-size: 1rem;
-  font-family: 'Poppins';
   color: #1C1559;
   text-decoration: none;
   padding: 12px 25px;
   border-radius: 50px;
-  display: inline-block;
+  background: white;
   transition: all 0.3s ease-in-out;
   border: 2px solid transparent;
-  background: white;
 }
 
-/* Hover effect with gradient border */
+/* Hover Gradient Border */
 .nav-links li a:hover {
-  color: #1C1559;
   background: linear-gradient(white, white) padding-box,
               linear-gradient(90deg, #1C1559 8.65%, #5C4FDA 24.04%, #ED1C24 100%) border-box;
-  /* border: 3px solid transparent; */
+  color: #1C1559;
 }
 
-/* Hamburger */
+/* 🌟 Hamburger Menu */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -81,72 +76,26 @@
   transition: all 0.3s ease;
 }
 
-/* Hamburger animation */
+/* Hamburger Animation */
 .bar.change:nth-child(1) {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
-
 .bar.change:nth-child(2) {
   opacity: 0;
 }
-
 .bar.change:nth-child(3) {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
+/* 🌈 RESPONSIVE DESIGN */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Mobile */
+/* 📱 Mobile (max-width: 768px) */
 @media (max-width: 768px) {
   .navbar {
     padding: 15px 20px;
   }
 
-  .hamburger { 
+  .hamburger {
     display: flex;
     z-index: 1001;
   }
@@ -155,18 +104,18 @@
     position: absolute;
     top: 90px;
     right: 0;
-    background: #ffffff;
     flex-direction: column;
     width: 100%;
+    background: #ffffff;
     text-align: center;
     max-height: 0;
     overflow: hidden;
     padding: 0;
-    transition: max-height 0.3s ease-in-out;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: max-height 0.3s ease-in-out;
   }
 
-  .nav-links.open { 
+  .nav-links.open {
     max-height: 400px;
     padding: 20px 0;
   }
@@ -175,15 +124,69 @@
     padding: 10px 0;
   }
 
-  .logo-img {
-    width: 120px;
-    height: auto;
-    margin-left: 0;
-  }
-
   .nav-links li a {
     display: block;
     width: 80%;
     margin: 0 auto;
+  }
+
+  .logo-img {
+    width: 100px;
+    height: auto;
+    margin-left: 0;
+  }
+}
+
+/* 💻 Tablet (769px – 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .navbar {
+    padding: 15px 40px;
+  }
+
+  .logo-img {
+    width: 130px;
+    height: auto;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+
+  .nav-links li a {
+    font-size: 0.95rem;
+    padding: 10px 20px;
+  }
+}
+
+/* 🖥️ Laptop (1025px – 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .navbar {
+    padding: 15px 50px;
+  }
+
+  .logo-img {
+    width: 140px;
+    height: auto;
+  }
+
+  .nav-links li a {
+    font-size: 1rem;
+  }
+}
+
+/* 🖥️ Ultra-wide screens (min-width: 1441px) */
+@media (min-width: 1441px) {
+  .navbar {
+    padding: 20px 80px;
+  }
+
+  .logo-img {
+    width: 170px;
+    height: auto;
+  }
+
+  .nav-links li a {
+    font-size: 1.1rem;
+    padding: 14px 28px;
   }
 }
