@@ -1,0 +1,52 @@
+/* .webinarbg{
+    background-image: url("../Asset/Background.png");
+    height: 100vh;
+} */
+.freetext{
+    font-size: 55px;
+}
+.customtext{
+    color: #2BC8EB !important;
+    font-weight: 600;
+}
+.gllogo{
+    height: 100px;
+}
+.webinarbg {
+    background-image: url("../Asset/Background.png");
+    height: 100vh;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-position: fixed; 
+    padding-left: 30px;
+}
+.bannertxt{
+    font-size: 38px;
+}
+.bgcrd{
+    height: 500px;
+    width: 600px;
+    background-color: #2BC8EB;
+}
+@media (max-width: 768px) {
+    .webinarbg {
+      background-image: url("../Asset/iphonebg.png");
+      /* background-size: contain;  */
+      background-attachment: scroll;
+      background-position: top;  
+      height: 100%;
+      padding-left: 0px;
+    }
+    .gllogo{
+        height: 70px;
+       
+    }
+    .freetext{
+        font-size: 30px;
+    }
+    .bannertxt{
+        font-size: 25px;
+    }
+}
+  

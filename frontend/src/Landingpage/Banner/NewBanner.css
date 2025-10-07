@@ -1,0 +1,227 @@
+
+ .hero0 {
+  padding: 30px;
+  z-index: -1;
+  border-radius: 2px;
+
+  /* Your exact gradient */
+  background: linear-gradient(
+    90deg,
+    #5C4FDA 31.73%,
+    #ED1C24 59.62%,
+    #312A74 91.35%
+  );
+  background-size: 300% 300%; /* allows smooth movement */
+
+  /* Initial glow */
+  box-shadow: 0 0 40px rgba(92, 79, 218, 0.6),
+              0 0 60px rgba(237, 28, 36, 0.5),
+              0 0 50px rgba(49, 42, 116, 0.6);
+
+  /* ✨ Combined animations */
+  animation: glowPulse 3s ease-in-out infinite alternate,
+             gradientShift 10s ease-in-out infinite;
+}
+
+/* 🔄 Smooth glowing effect */
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 30px rgba(92, 79, 218, 0.4),
+                0 0 40px rgba(237, 28, 36, 0.3),
+                0 0 35px rgba(49, 42, 116, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 70px rgba(92, 79, 218, 0.8),
+                0 0 100px rgba(237, 28, 36, 0.7),
+                0 0 80px rgba(49, 42, 116, 0.8);
+  }
+}
+
+/* 🌈 Gradient slide animation using your exact colors */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.hero {
+  /* margin-top: -150px; */
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 200px;
+  /* background-color: #ffffff;
+  width: 1374px;
+  height: 498px;
+  position: relative;
+  top: 189px;
+  left: 33px; */
+  border-radius: 20px;
+ 
+
+ background: linear-gradient(
+    90deg,
+    rgba(28, 21, 89, 1) 0%,
+    rgba(49, 42, 116, 1) 50%,
+    rgba(92, 79, 218, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 60px;
+  opacity: 1;
+}
+
+.hero-content {
+  max-width: 671px;
+  color: #ffffff;
+  width: 650px;
+  height: 160px;
+  top: 211px;
+  left: 60px;
+}
+
+.hero-content h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 550;
+  font-size: 45px;
+  line-height: 100%;
+  margin-top: -150px;
+  margin-left: -30px;
+  letter-spacing: 0%;
+  color: rgba(255, 255, 255, 1);
+  font-style: "SemiBold";
+
+}
+
+.hero-content p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 100%;
+  margin-left: -30px;
+  margin-top: 50px;
+  letter-spacing: 0%;
+  color: rgba(255, 255, 255, 1);
+  font-style: "SemiBold";
+
+}
+.rectangle3  {
+  width: 300px;
+  
+  position: absolute;
+  top: 550px;
+  left: 90px;
+  height: 50px;
+  opacity: 1;
+  border-radius: 60px;
+  border: 8px solid transparent; /* important for gradient border */
+
+  background: 
+    linear-gradient(#1C1559, #1C1559) padding-box,
+    linear-gradient(90deg, #3C2EBF 16.82%, #ED1C24 100%) border-box;
+
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  align-items: center;
+  cursor: pointer;
+  
+  
+}
+/* .rectangle3:hover {
+  
+  box-shadow: 
+    0 0 10px #3C2EBF,
+    0 0 20px #ED1C24,
+    0 0 30px #3C2EBF,
+    0 0 40px #ED1C24;
+  transform: scale(1.05);
+} */
+
+
+.hero-image {
+  width: 624px;
+  height: 454px;
+  border-radius: 20px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+    .hero {
+        padding: 40px 40px;
+    }
+    .hero-content h1 {
+        font-size: 36px;
+    }
+    .hero-content p {
+        font-size: 20px;
+    }
+    .hero-image {
+        width: 500px;
+        height: auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+    .hero-content {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .hero-image {
+        width: 100%;
+        height: auto;
+        max-width: 624px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 28px;
+    }
+    .hero-content p {
+        font-size: 18px;
+    }
+    .hero-image {
+        width: 100%;
+        height: auto;
+    }
+    .nav-links li{
+      margin-left: -384px;
+    }
+}
+
+@media (max-width: 426px) {
+    .hero-content h1 {
+        font-size: 24px;
+    }
+    .hero-content p {
+        font-size: 16px;
+    }
+    .hero {
+        padding: 20px 10px;
+    }
+     .nav-links li{
+      margin-left: -304px;
+    }
+}

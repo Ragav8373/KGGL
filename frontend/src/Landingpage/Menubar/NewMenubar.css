@@ -1,0 +1,188 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background: #ffffff;
+  color: #1C1559;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+  z-index: 1000;
+}
+
+/* Logo section */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-img {
+  width: 154px;
+  height: 154px;
+  object-fit: contain;
+  margin-top: 2px;
+  margin-left: 32px;
+}
+
+.logo-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1C1559;
+}
+
+/* Nav Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links li a {
+  font-weight: 500;
+  font-size: 1rem;
+  color: #1C1559;
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 50px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  border: 2px solid transparent;
+  background: white;
+}
+
+/* Hover effect with gradient border */
+.nav-links li a:hover {
+  color: #1C1559;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(90deg, #1C1559 8.65%, #5C4FDA 24.04%, #ED1C24 100%) border-box;
+  /* border: 3px solid transparent; */
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 6px;
+}
+
+.bar {
+  width: 28px;
+  height: 3px;
+  background-color: #1C1559;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Hamburger animation */
+.bar.change:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.bar.change:nth-child(2) {
+  opacity: 0;
+}
+
+.bar.change:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Mobile */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .hamburger { 
+    display: flex;
+    z-index: 1001;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 90px;
+    right: 0;
+    background: #ffffff;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: max-height 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+
+  .nav-links.open { 
+    max-height: 400px;
+    padding: 20px 0;
+  }
+
+  .nav-links li {
+    padding: 10px 0;
+  }
+
+  .logo-img {
+    width: 120px;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .nav-links li a {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+}

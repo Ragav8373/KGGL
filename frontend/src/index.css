@@ -1,0 +1,81 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden; 
+  /* user-select: none; */
+  font-family: 'Proxima Nova', sans-serif !important;
+  font-display: swap;
+}
+
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-drag: none;
+  pointer-events: none;
+  -webkit-user-select: none; 
+  -moz-user-select: none;
+  -ms-user-select: none;
+  /* user-select: none; */
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+.certificatepart{
+  background: linear-gradient(to right,#291571,#09091B);
+  text-align: center;
+}
+
+
+.certificatepart h2{
+  background: linear-gradient(to right,#291571,#09091B);
+  line-height: 3rem;
+  font-size: 40px;
+  font-family: 'Proxima Nova', sans-serif !important;
+}
+
+.dmaboutpart p{
+  font-size: 20px;
+}
+
+
+.dmserveimg{
+  max-height: 600px;
+}
+
+.certtext{
+  font-weight: 300;
+ 
+}
+.paraaboutdm{
+  text-align: justify !important;
+}
+@media (max-width:768px){
+  .certificatepart{
+    background: linear-gradient(to right,#291571,#09091B);
+    text-align: justify;
+  }
+  .certificatepart h2{
+    background: linear-gradient(to right,#291571,#09091B);
+    line-height: 2rem;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Proxima Nova', sans-serif !important;
+  }
+  
+.dmserveimg{
+  max-height: 400px;
+}
+  
+}
+
+.expertAdvice{
+ box-shadow: 3px 3px 4px rgb(160, 160, 225); 
+}
+.txtclr1{
+  color: #291571;
+  font-size: 20px;
+}
