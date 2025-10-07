@@ -4,6 +4,7 @@ import Aboutus from "./Landingpage/Aboutus/Aboutus";
 import NewAbout from "./Landingpage/Aboutus/NewAbout";  //new
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Credentials from "./Landingpage/Credentials/Credentials";
+import NewCredentials from "./Landingpage/Credentials/NewCredentials";  //new
 import Menubar from "./Landingpage/Menubar/Menubar";
 import NewMenubar from "./Landingpage/Menubar/NewMenubar"; //new
 import Footer from "./Landingpage/Footer/Footer";
@@ -13,6 +14,7 @@ import Mission from "./Aboutsection/Mission/Mission";
 import Banner from "./Landingpage/Banner/Banner";
 import NewBanner from "./Landingpage/Banner/NewBanner";   //new
 import Ourservices from "./Landingpage/Ourservices/Ourservices";
+import NewOurservices from "./Landingpage/Ourservices/NewOurservices";  //new
 import Whygeniuslabs from "./Aboutsection/Whygeniuslabs/Whygeniuslabs";
 import Teamfeatures from "./HRRecruitment/Teamfeatures/Teamfeatures";
 import Bannerhr from "./HRRecruitment/Recruitment/Bannerhr/Bannerhr";
@@ -117,8 +119,10 @@ function App() {
               <NewBanner/>,
               // <Aboutus />,
               <NewAbout/>,
-              <Ourservices />,
-              <Credentials />,
+              // <Ourservices />,
+              <NewOurservices/>,
+              // <Credentials />,
+              <NewCredentials/>,
               <Newsletter/>,
               <ClientSection/>,
               <Insights />,

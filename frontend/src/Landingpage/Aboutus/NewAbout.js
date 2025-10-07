@@ -21,7 +21,7 @@ function NewAbout() {
         <img src={aboutImage} alt="About" />
       </div>
       <button type="button" onClick={handleNav} className="rectangle4">
-        Button
+        Know More
       </button>
     </section>
   );

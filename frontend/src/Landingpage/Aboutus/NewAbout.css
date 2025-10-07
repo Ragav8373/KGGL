@@ -71,26 +71,24 @@
 }
 
 .rectangle4  {
-  width: 300px;
-  
+  width: 250px;
   top: -60px;
   position: relative;
   left: 1150px;
-  height: 50px;
+  height: 60px;
   opacity: 1;
   border-radius: 60px;
   border: 8px solid transparent; /* important for gradient border */
 
   background: 
-    linear-gradient(#1C1559, #1C1559) padding-box,
+    linear-gradient(white, white) padding-box,
     linear-gradient(90deg, #3C2EBF 16.82%, #ED1C24 100%) border-box;
 
-  color: white;
-  font-size: 20px;
-  font-weight: 600;
-  align-items: center;
+  color: #1C1559;
+  font-size: 30px;
+  font-weight: 600px;
+  text-align: center;
   cursor: pointer;
-  
   
 }
 
