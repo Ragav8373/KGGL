@@ -1,4 +1,4 @@
-/* 🌟 Navbar Base */
+/*  Navbar Base */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -13,7 +13,7 @@
   position: relative;
 }
 
-/* 🌟 Logo Section */
+/*  Logo Section */
 .logo-container {
   display: flex;
   align-items: center;
@@ -34,7 +34,7 @@
   color: #1C1559;
 }
 
-/* 🌟 Nav Links */
+/*  Nav Links */
 .nav-links {
   list-style: none;
   display: flex;
@@ -60,7 +60,7 @@
   color: #1C1559;
 }
 
-/* 🌟 Hamburger Menu */
+/* Hamburger Menu */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -87,7 +87,7 @@
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* 🌈 RESPONSIVE DESIGN */
+/* RESPONSIVE DESIGN */
 
 /* 📱 Mobile (max-width: 768px) */
 @media (max-width: 768px) {
@@ -137,7 +137,7 @@
   }
 }
 
-/* 💻 Tablet (769px – 1024px) */
+/* Tablet (769px – 1024px) */
 @media (min-width: 769px) and (max-width: 1024px) {
   .navbar {
     padding: 15px 40px;
@@ -158,7 +158,7 @@
   }
 }
 
-/* 🖥️ Laptop (1025px – 1440px) */
+/*  Laptop (1025px – 1440px) */
 @media (min-width: 1025px) and (max-width: 1440px) {
   .navbar {
     padding: 15px 50px;
@@ -174,7 +174,7 @@
   }
 }
 
-/* 🖥️ Ultra-wide screens (min-width: 1441px) */
+/*  Ultra-wide screens (min-width: 1441px) */
 @media (min-width: 1441px) {
   .navbar {
     padding: 20px 80px;
