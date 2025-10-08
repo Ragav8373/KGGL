@@ -1,0 +1,169 @@
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+}
+
+.contact-left {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 48px;
+  font-weight: 700;
+  background: linear-gradient(to right, #2e2aa7, #e21857);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+  
+.contact-subtitle {
+  font-size: 18px;
+  color: #333;
+  margin: 20px 0;
+}
+.contact-btn-outline {
+  /* width: 250px; */
+  position: relative;
+  padding: 10px 25px;
+  border: 8px solid transparent;
+  border-radius: 60px;
+
+  background: 
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(90deg, #3C2EBF 16.82%, #ED1C24 100%) border-box;
+
+  color: #1C1559;
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+
+/* Hover state: fill with gradient */
+.contact-btn-outline:hover {
+  background: linear-gradient(90deg, #3C2EBF 16.82%, #ED1C24 100%);
+  color: white;
+}
+
+
+.contact-right {
+  flex: 1;
+  min-width: 320px;
+  padding: 20px;
+}
+
+.contact-form {
+  border: 8px solid transparent;
+  border-radius: 60px;
+
+  background: 
+    linear-gradient(white, white) padding-box,
+    linear-gradient(90deg, #3C2EBF 16.82%, #ED1C24 100%) border-box;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+
+  background-clip: padding-box, border-box;
+  background-origin: border-box;
+}
+
+.form-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: rgba(28, 21, 89, 1);
+
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 500;
+  color: rgba(28, 21, 89, 1);
+
+}
+
+.contact-form .form-control,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 5px;
+  border: 2px solid rgba(28, 21, 89, 1);
+  border-radius: 10px;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+
+.input-row {
+  display: flex;
+  gap: 10px;
+   
+}
+
+.input-row select {
+  flex: 1;
+   border: 2px solid rgba(28, 21, 89, 1);
+}
+
+.input-row input {
+
+  flex: 2;
+}
+
+.btn-gradient {
+  width: 100%;
+  margin-top: 25px;
+  padding: 12px 20px;
+  background-image: linear-gradient(to right, #2e2aa7, #e21857);
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+}
+
+.btn-gradient:hover {
+  opacity: 0.95;
+}
+
+.privacy-text {
+  font-size: 12px;
+  color: #555;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.privacy-text a {
+  color: #2e2aa7;
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+    align-items: stretch;
+    text-align: center;
+  }
+
+  .contact-title {
+    font-size: 36px;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+}

@@ -48,6 +48,7 @@ import Dmblogview from "./DigitalMarketing/DMblogview/Dmblogview";
 import Dmblog from "./DigitalMarketing/Dmblog/Dmblog";
 import Sapblogview from "./Sap/Sapblogview/Sapblogview";
 import Contactpages from "./Landingpage/Contactpages/Contactpages";
+import NewContactpages from "./Landingpage/Contactpages/NewContactpages";  //new
 import Blogviewed from "./Landingpage/Blogviewed/Blogviewed";
 import Blogit from "./IT/Blogit/Blogit";
 import Autopopup from "./Landingpage/Autopopup/Autopopup";
@@ -123,10 +124,11 @@ function App() {
               <NewOurservices/>,
               // <Credentials />,
               <NewCredentials/>,
-              <Newsletter/>,
+              // <Newsletter/>,
               <ClientSection/>,
               <Insights />,
-              <Contactpages />,
+              // <Contactpages />,
+              <NewContactpages/>,
               <Footercard />,
               <Footer />,
               <Autopopup />
