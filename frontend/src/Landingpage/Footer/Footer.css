@@ -3,7 +3,9 @@
     max-width: 200px;
 }
 .footerbg{
-    background-color: #291571;
+    background-color: linear-gradient(90deg, #5C4FDA 0%, #1C1559 50%, #1C1559 97.12%);
+
+    /* background-color: #291571; */
     color: white;
 }
 .contactmain{

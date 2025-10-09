@@ -1,0 +1,89 @@
+.bgclrfooter {
+  background-color: #f8f9fa;
+}
+
+/* Footer Card Wrapper with Gradient Border */
+.footer-wrapper {
+  position: relative;
+  background: white;
+  border-radius: 50px; /* smoother rounded edges */
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+/* Gradient border using pseudo-element */
+.footer-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50px;
+  padding: 10px; /* border thickness */
+  background: linear-gradient(90deg, #2e27b7 0%, #ed1c24 100%);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: 'xor';
+  mask-composite: exclude;
+  z-index: 1;
+}
+
+/* Inner content stays above border */
+.footer-wrapper > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Icon and text styling */
+.footer-link {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.hoverani {
+  font-size: 30px;
+  padding: 10px;
+  color: #ed1c24;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.hoverani:hover {
+  color: #291571;
+  transform: scale(1.1);
+}
+
+.contactmain {
+  color: #291571;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.contactpara {
+  color: #291571;
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .footer-wrapper {
+    padding: 1.5rem;
+  }
+
+  .hoverani {
+    font-size: 26px;
+  }
+
+  .contactmain {
+    font-size: 1rem;
+  }
+
+  .contactpara {
+    font-size: 0.9rem;
+  }
+}

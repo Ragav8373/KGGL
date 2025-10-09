@@ -9,6 +9,7 @@ import Menubar from "./Landingpage/Menubar/Menubar";
 import NewMenubar from "./Landingpage/Menubar/NewMenubar"; //new
 import Footer from "./Landingpage/Footer/Footer";
 import Footercard from "./Landingpage/Footercard/Footercard";
+import NewFootercard from "./Landingpage/Footercard/NewFootercard"; //new
 import AboutKggl from "./Aboutsection/AboutKggl/AboutKggl";
 import Mission from "./Aboutsection/Mission/Mission";
 import Banner from "./Landingpage/Banner/Banner";
@@ -129,7 +130,8 @@ function App() {
               <Insights />,
               // <Contactpages />,
               <NewContactpages/>,
-              <Footercard />,
+              // <Footercard />,
+              <NewFootercard/>,
               <Footer />,
               <Autopopup />
             ]}
