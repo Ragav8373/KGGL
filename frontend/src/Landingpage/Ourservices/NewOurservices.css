@@ -373,6 +373,7 @@
   
   .erp-text h3, .it-text h3, .dg-text h3 {
     font-size: 28px;
+    
   }
   
   .erp-text p, .it-text p, .dg-text p {
@@ -424,11 +425,12 @@
   .erp-section h2, .dg-section h2 {
     margin-left: 30px;
     font-size: 40px;
+    
   }
   
   .it-section h2 {
-    margin-left: auto;
-    margin-right: 30px;
+    margin-left: 740px;
+
     font-size: 40px;
   }
   
@@ -445,6 +447,7 @@
     margin-left: auto;
     margin-right: 30px;
     float: right;
+    margin-top: -250px;
   }
   
   .it-image img {
@@ -454,15 +457,15 @@
   
   .erp-text, .dg-text {
     margin-left: 400px;
-    margin-top: -230px;
-    max-width: 550px;
+    margin-top: -256px;
+    max-width: 610px;
   }
   
   .it-text {
     margin-left: 30px;
     margin-right: 400px;
-    margin-top: 20px;
-    max-width: 500px;
+    margin-top: -10px;
+    max-width: 600px;
   }
   
   .erp-text h3, .it-text h3, .dg-text h3 {
@@ -475,6 +478,9 @@
   
   .btn3 {
     margin-left: 320px;
+  }
+   .btn2 {
+    margin-Top: -10px;
   }
 }
 
