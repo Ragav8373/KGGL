@@ -310,7 +310,7 @@ function NewContactpages() {
         </button>
 
         <p className="privacy-text">
-          The information you provide in this form will be used to process your request and keep you informed about our services. In line with KRG Genius Labs’s <a href="#">Privacy Policy</a>
+          The information you provide in this form will be used to process your request and keep you informed about our services. In line with KG Genius Labs’s <a href="#">Privacy Policy</a>
         </p>
       </form>
     </div>

@@ -1,4 +1,4 @@
-.bgclrfooter {
+/* .bgclrfooter {
   background: linear-gradient(to bottom, white 50%, #291571 50%);
   
 }
@@ -23,4 +23,63 @@
        display: flex;
        
 }
+} */
+.footer-wrapper {
+  position: relative;
+  background: white; /* inner background only */
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* Gradient border only around edges */
+.footer-wrapper::before {
+  content: "";
+  position: absolute;
+  inset: 0; /* shorthand for top/left/right/bottom: 0 */
+  background: linear-gradient(
+    180deg,
+    #1c1559 0%,
+    #3c2ebf 32.69%,
+    #472db5 42.19%,
+    #ed1c24 100%
+  );
+  border-radius: 15px;
+  z-index: -1;
+}
+
+/* White inner layer to cover inside (so no white spills outside) */
+.footer-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 10px; /* same as border thickness */
+  background: white;
+  border-radius: 8px; /* slightly smaller radius for smooth corners */
+  z-index: -1;
+}
+
+.contactmain {
+  color: #291571 !important;
+}
+
+.hoverani {
+  font-size: 30px;
+  padding: 10px;
+  color: #ed1c24;
+  transition: color 0.3s ease;
+}
+
+.contactpara {
+  color: #291571;
+}
+
+.hoverani:hover {
+  color: #291571;
+}
+
+@media (max-width: 768px) {
+  .footer-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 }

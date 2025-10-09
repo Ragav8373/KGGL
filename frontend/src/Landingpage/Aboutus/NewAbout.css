@@ -1,17 +1,24 @@
 .about {
-  padding-top: 100px;
+  padding: 50px 0;
   width: 100%;
   min-height: 500px;
   background-color: #f8f9fc;
 }
 
+.about-container {
+  max-width: 1200px;
+  margin: 0px 100px;
+  padding: 0px 49px;
+}
+
 .about-text {
   text-align: left;
+  margin-bottom: 25px;
+  /* margin-left: -100px; */
 }
 
 /* Heading */
 .about-text h2 {
-  position: relative;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: normal;
@@ -19,7 +26,6 @@
   line-height: 100%;
   letter-spacing: 0;
   margin-bottom: 20px;
-  left: 49px;
 
   /* Gradient Text */
   background: linear-gradient(
@@ -37,38 +43,36 @@
 
 /* Paragraph */
 .about-text p {
-  padding-top: 60px;
-  position: relative;
+  margin-top: 20px;
   font-family: "Open Sans", sans-serif;
   font-size: 18px;
   line-height: 1.8;
-  width: 96%;
   background: linear-gradient(90deg, #1C1559 0%, #3C2EBF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-  left: 49px;
 }
 
 /* Image */
-.about-image img {
-  position: relative;
-  width: 1021px;
-  height: 454px;
-  left: 49px;
-  object-fit: cover;
-  border-radius: 10px;
+.about-image {
+  margin-bottom: 20px;
 }
 
-/* Button */
+.about-image img {
+  width: 60%;
+  max-width: 1021px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: 0px -2px;
+}
+
 .rectangle4 {
   width: 250px;
-  top: -60px;
-  position: relative;
-  left: 1150px;
   height: 60px;
-  opacity: 1;
+  display: block;
   border-radius: 60px;
   border: 8px solid transparent;
   background: linear-gradient(white, white) padding-box,
@@ -78,6 +82,15 @@
   font-weight: 600;
   text-align: center;
   cursor: pointer;
+  transition: transform 0.3s ease;
+  
+  /* Your custom positioning */
+  margin-top: -100px;
+  margin-left: 750px;
+}
+
+.rectangle4:hover {
+  transform: scale(1.05);
 }
 
 /* Animation */
@@ -92,89 +105,145 @@
   }
 }
 
-/* ✅ Responsive Breakpoints (Only positioning & size adjustments) */
+/* ✅ Responsive Breakpoints */
 
-/* Laptop */
+/* Laptop (1024px - 1200px) */
 @media (max-width: 1200px) {
+  .about-container {
+    margin: 0px 60px;
+    padding: 0 30px;
+  }
+
   .about-text h2 {
     font-size: 36px;
-    left: 30px;
   }
+
   .about-text p {
     font-size: 17px;
-    left: 30px;
   }
+
   .about-image img {
-    width: 90%;
-    left: 30px;
-    height: auto;
+    width: 70%;
   }
+
   .rectangle4 {
-    left: 70%;
-    transform: translateX(-50%);
     font-size: 26px;
+    width: 220px;
+    height: 55px;
+    margin-left: 73%;
+    margin-top: -90px;
   }
 }
 
-/* Tablet */
+/* Tablet (768px - 992px) */
 @media (max-width: 992px) {
   .about {
-    text-align: center;
-    padding: 60px 20px;
+    padding: 60px 0;
   }
+
+  .about-container {
+    margin: 0px 40px;
+    padding: 0 20px;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
   .about-text h2,
   .about-text p {
-    left: 0;
     text-align: center;
-    width: 100%;
   }
+
+  .about-image {
+    text-align: center;
+  }
+
   .about-image img {
-    left: 0;
-    width: 100%;
-    height: auto;
+    width: 85%;
+    margin: 0 auto;
   }
+
   .rectangle4 {
-    left: 50%;
-    transform: translateX(-50%);
-    top: 20px;
+    margin: 20px auto 30px;
   }
 }
 
-/* Mobile */
+/* Mobile (481px - 768px) */
 @media (max-width: 768px) {
+  .about-container {
+    margin: 0px 20px;
+    padding: 0 15px;
+  }
+
   .about-text h2 {
     font-size: 28px;
   }
+
   .about-text p {
     font-size: 16px;
-    padding-top: 30px;
+    margin-top: 15px;
   }
+
   .about-image img {
-    width: 100%;
-    height: auto;
+    width: 95%;
   }
+
   .rectangle4 {
     width: 200px;
     height: 50px;
     font-size: 20px;
-    top: 30px;
   }
 }
 
-/* Small Mobile */
+/* Small Mobile (up to 480px) */
 @media (max-width: 480px) {
   .about {
-    padding-top: 60px;
+    padding: 60px 0;
   }
+
+  .about-container {
+    margin: 0px 10px;
+    padding: 0 15px;
+  }
+
   .about-text h2 {
     font-size: 24px;
   }
+
   .about-text p {
     font-size: 14px;
   }
+
+  .about-image img {
+    width: 100%;
+  }
+
   .rectangle4 {
     width: 180px;
     height: 45px;
     font-size: 18px;
+  }
+}
+
+/* Extra Small Mobile (up to 360px) */
+@media (max-width: 360px) {
+  .about-container {
+    margin: 0px 5px;
+    padding: 0 10px;
+  }
+
+  .about-text h2 {
+    font-size: 22px;
+  }
+
+  .about-text p {
+    font-size: 13px;
+  }
+
+  .rectangle4 {
+    width: 160px;
+    height: 42px;
+    font-size: 16px;
   }
 }

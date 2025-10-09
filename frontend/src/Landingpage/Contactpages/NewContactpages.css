@@ -18,14 +18,15 @@
 .contact-title {
   font-size: 48px;
   font-weight: 700;
-  background: linear-gradient(to right, #2e2aa7, #e21857);
+  background: linear-gradient(90.02deg, #1C1559 15.39%, #3C2EBF 42.31%, #ED1C24 80.76%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
   
 .contact-subtitle {
   font-size: 18px;
-  color: #333;
+  color:rgba(28, 21, 89, 1);
+
   margin: 20px 0;
 }
 .contact-btn-outline {

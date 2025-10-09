@@ -125,7 +125,7 @@ function App() {
               // <Credentials />,
               <NewCredentials/>,
               // <Newsletter/>,
-              <ClientSection/>,
+              // <ClientSection/>,
               <Insights />,
               // <Contactpages />,
               <NewContactpages/>,

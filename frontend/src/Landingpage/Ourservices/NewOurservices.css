@@ -6,302 +6,333 @@
     padding-top: 100px;
     padding-bottom: 50px;
 }
+
 .Rectangle5{
-width: 100%;
-max-width: 100%;
-opacity: 1;
-padding: 30px;
-background: linear-gradient(90deg, #5C4FDA 0%, #1C1559 63.94%);
-color:rgba(255, 255, 255, 1);
-text-align: center;
-margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    opacity: 1;
+    padding: 20px;
+    background: linear-gradient(90deg, #5C4FDA 0%, #1C1559 63.94%);
+    color:rgba(255, 255, 255, 1);
+    text-align: center;
+    margin: 0 auto;
 }
+
 .Rectangle5 h1{
-font-size: 70px;
-font-weight: 600;
-font-family: 'Poppins';
+    font-size: 70px;
+    font-weight: 600;
+    font-family: 'Poppins';
 }
+
+/* ERP Section */
 .erp-section h2{
-  margin-top: 50px;  
-  position: relative;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 50px;
-  line-height: 100%;
-  letter-spacing: 0;
-  margin-bottom: 20px;
-  left:49px ;
-
-  /* Gradient Text */
-  background: linear-gradient(90deg, #1C1559 15.39%, #3C2EBF 42.31%, #ED1C24 80.76%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-
-  display: inline-block; /* gradient only over text */
+    margin-top: 40px;  
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 100%;
+    letter-spacing: 0;
+    margin-bottom: 5px;
+    margin-left: 49px;
+    background: linear-gradient(90deg, #1C1559 15.39%, #3C2EBF 42.31%, #ED1C24 80.76%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
 }
+
+.erp-image {
+    position: relative;
+    display: inline-block;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
 .erp-image img {
- display: inline;
-  position: relative;
-  width: 411px;
-  height: 299px;
-  left:60px ;
-  object-fit: cover;
-  border-radius: 10px;
+    display: block;
+    width: 411px;
+    height: 299px;
+    object-fit: cover;
+    border-radius: 10px;
+}
 
+.erp-image .section-border {
+    position: absolute;
+    left: -37px;
+    top: 0;
+    width: 7px;
+    height: 100%;
+    background-color: rgba(28, 21, 89, 1);
+    border-radius: 3.5px;
 }
-.erp-image,.erp-text{
-    display: flex;
-    align-items: center;
-    gap: 5px;
+
+.erp-text{
+    display: block;
+    max-width: 900px;
+    margin-left: 500px;
+    margin-top: -280px;
 }
+
 .erp-text h3{
-    
-  margin-top: -580px;
-  width: 869px;
-  position: relative;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600px;
-  font-style: normal;
-  font-size: 32px;
-  line-height: 100%;
-  letter-spacing: 0;
-  left:500px ;
-
-  /* Gradient Text */
-  background: linear-gradient(90deg, #1C1559 15.39%, #3C2EBF 42.31%, #ED1C24 80.76%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
- white-space: nowrap;
-  display: inline-block; /* gradient only over text */
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 1.1;
+    letter-spacing: 0;
+    margin-top: -50px;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #1C1559 15.39%, #3C2EBF 42.31%, #ED1C24 80.76%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
+
 .erp-text p{
-  margin-top: -350px;
-  position: relative;
-  font-family: "Open Sans", sans-serif;
-  font-size: 24px;
-  font-weight: 600px;
-  line-height: 1.8;
-  color: #444;
-  width: 96%; 
-  background: linear-gradient(90deg, #1C1559 0%, #3C2EBF 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-   background-clip: text;
-   color: transparent;
-  left:-70px ;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    background: linear-gradient(90deg, #1C1559 0%, #3C2EBF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
+
 .btn2{
-  width: 250px;
-  top: -60px;
-  position: relative;
-  left: 500px;
-  height: 60px;
-  opacity: 1;
-  border-radius: 60px;
-  border: 8px solid transparent; /* important for gradient border */
-
-  background: 
-    linear-gradient(white, white) padding-box,
-    linear-gradient(90deg, #3C2EBF 16.82%, #ED1C24 100%) border-box;
-
-  color: #1C1559;
-  font-size: 30px;
-  font-weight: 600;
-  text-align: center;
-  cursor: pointer;
-  white-space: nowrap;
-  
+    width: 250px;
+    height: 60px;
+    margin-left: 10px;
+    margin-top: 25px;
+    opacity: 1;
+    border-radius: 60px;
+    border: 8px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(90deg, #3C2EBF 16.82%, #ED1C24 100%) border-box;
+    color: #1C1559;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    display: block;
 }
 
-
-
-
+/* IT Section */
 .it-section h2{
-  margin-top: 50px;  
-  position: relative;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 50px;
-  line-height: 100%;
-  letter-spacing: 0;
-  margin-bottom: 20px;
-  right:-1240px ;
-
-  /* Gradient Text */
-  background: linear-gradient(90deg, #1C1559 15.39%, #3C2EBF 42.31%, #ED1C24 80.76%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-
-  display: inline-block; /* gradient only over text */
+    margin-top: 40px;  
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 100%;
+    letter-spacing: 0;
+    margin-bottom: 25px;
+    margin-left: 1240px;
+    text-align: right;
+    background: linear-gradient(90deg, #1C1559 15.39%, #3C2EBF 42.31%, #ED1C24 80.76%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
 }
-.it-image img {
- display: inline;
-  position: relative;
-  width: 411px;
-  height: 299px;
-  right:-1070px ;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-top: -300px;
-  
 
+.it-text{
+    display: block;
+    max-width: 900px;
+    margin-left: 130px;
+    margin-top: 20px;
+    text-align: right;
 }
-.it-image,.it-text{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
+
 .it-text h3{
-    
-  
-  margin-top: -200px;
-  width: 869px;
-  position: relative;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600px;
-  font-style: normal;
-  font-size: 32px;
-  line-height: 100%;
-  letter-spacing: 0;
-  left: 400px;
-  
-
-  /* Gradient Text */
-  background: linear-gradient(90deg, #1C1559 15.39%, #3C2EBF 42.31%, #ED1C24 80.76%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
- white-space: nowrap;
-  display: inline-block; /* gradient only over text */
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 1.1;
+    letter-spacing: 0;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #1C1559 15.39%, #3C2EBF 42.31%, #ED1C24 80.76%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
+
 .it-text p{
-  margin-top: 50px;
-  position: relative;
-  font-family: "Open Sans", sans-serif;
-  font-size: 24px;
-  font-weight: 600px;
-  line-height: 1.8;
-  color: #444;
-  width: 96%; 
-  background: linear-gradient(90deg, #1C1559 0%, #3C2EBF 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-   background-clip: text;
-   color: transparent;
-  left:-400px ;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    background: linear-gradient(90deg, #1C1559 0%, #3C2EBF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
+
+.it-image {
+    position: relative; 
+    display: inline-block; 
+    margin-left: 1058px;
+    margin-top: -280px;
+}
+
+.it-image img {
+    display: block;
+    width: 411px;
+    height: 299px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.it-image .section-border {
+    position: absolute;
+    right: -37px;
+    top: 0;
+    width: 7px;
+    height: 100%;
+    background-color: rgba(28, 21, 89, 1);
+    border-radius: 3.5px;
+}
+
 .btn3{
-  width: 250px;
-  top: -20px;
-  position: relative;
-  left: 800px;
-  height: 60px;
-  opacity: 1;
-  border-radius: 60px;
-  border: 8px solid transparent; /* important for gradient border */
-
-  background: 
-    linear-gradient(white, white) padding-box,
-    linear-gradient(90deg, #3C2EBF 16.82%, #ED1C24 100%) border-box;
-
-  color: #1C1559;
-  font-size: 30px;
-  font-weight: 600;
-  text-align: center;
-  cursor: pointer;
-  white-space: nowrap;
-  
+    width: 250px;
+    height: 60px;
+    margin-left: 650px;
+    margin-top: 20px;
+    opacity: 1;
+    border-radius: 60px;
+    border: 8px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(90deg, #3C2EBF 16.82%, #ED1C24 100%) border-box;
+    color: #1C1559;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    display: block;
 }
 
-
+/* Digital Marketing Section */
 .dg-section h2{
-  margin-top: 60px;  
-  position: relative;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-  font-size: 50px;
-  /* line-height: 100%; */
-  line-height: 1.8;
-  letter-spacing: 0;
-  margin-bottom: 20px;
-  width: 480px;
-  left:49px ;
-
-
-  /* Gradient Text */
-  background: linear-gradient(90deg, #1C1559 15.39%, #3C2EBF 42.31%, #ED1C24 80.76%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
-
-  display: inline-block; /* gradient only over text */
+    margin-top: 40px;  
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 1.3;
+    letter-spacing: 0;
+    margin-bottom: 5px;
+    max-width: 480px;
+    margin-left: 49px;
+    background: linear-gradient(90deg, #1C1559 15.39%, #3C2EBF 42.31%, #ED1C24 80.76%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    display: inline-block;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
+
+.dg-image {
+    position: relative;
+    display: inline-block;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
 .dg-image img {
- display: inline;
-  position: relative;
-  width: 411px;
-  height: 299px;
-  left:60px ;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-top: -20px;
+    display: block;
+    width: 411px;
+    height: 299px;
+    object-fit: cover;
+    border-radius: 10px;
+}
 
+.dg-image .section-border {
+    position: absolute;
+    left: -37px;
+    top: 0;
+    width: 7px;
+    height: 100%;
+    background-color: rgba(28, 21, 89, 1);
+    border-radius: 3.5px;
 }
-.dg-image,.dg-text{
-    display: flex;
-    align-items: center;
-    gap: 5px;
+
+.dg-text{
+    display: block;
+    max-width: 900px;
+    margin-left: 500px;
+    margin-top: -280px;
 }
+
 .dg-text h3{
-    
-  margin-top: -560px;
-  width: 870px;
-  position: relative;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600px;
-  font-style: normal;
-  font-size: 32px;
-  /* line-height: 100%; */
-   line-height: 1.8;
-  letter-spacing: 0;
-  left:500px ;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 1.2;
+    letter-spacing: 0;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #1C1559 15.39%, #3C2EBF 42.31%, #ED1C24 80.76%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
 
-  /* Gradient Text */
-  background: linear-gradient(90deg, #1C1559 15.39%, #3C2EBF 42.31%, #ED1C24 80.76%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  color: transparent;
- white-space: nowrap;
-  display: inline-block; /* gradient only over text */
-}
 .dg-text p{
-  margin-top: -320px;
-  position: relative;
-  font-family: "Open Sans", sans-serif;
-  font-size: 24px;
-  font-weight: 600px;
-  line-height: 1.8;
-  color: #444;
-  width: 96%; 
-  background: linear-gradient(90deg, #1C1559 0%, #3C2EBF 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-   background-clip: text;
-   color: transparent;
-  left:-200px ;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    background: linear-gradient(90deg, #1C1559 0%, #3C2EBF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
+
+.btn4{
+    width: 250px;
+    height: 60px;
+    margin-left: 10px;
+    margin-top: 20px;
+    opacity: 1;
+    border-radius: 60px;
+    border: 8px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+        linear-gradient(90deg, #3C2EBF 16.82%, #ED1C24 100%) border-box;
+    color: #1C1559;
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+}
+
 
 /* ============================================
    RESPONSIVE MEDIA QUERIES
@@ -310,19 +341,23 @@ font-family: 'Poppins';
 /* Large Desktop (1440px and below) */
 @media screen and (max-width: 1440px) {
   .it-section h2 {
-    right: -1000px;
+    margin-left: 1160px;
   }
-  .it-image img {
-    right: -850px;
+  
+  .it-image {
+    margin-left: 970px;
   }
-  .it-text h3 {
-    left: 300px;
+  
+  .erp-text, .dg-text {
+    margin-left: 500px;
   }
-  .it-text p {
-    left: -300px;
+  
+  .it-text {
+    max-width: 800px;
   }
+  
   .btn3 {
-    left: 650px;
+    margin-left: 550px;
   }
 }
 
@@ -341,33 +376,35 @@ font-family: 'Poppins';
   }
   
   .erp-text p, .it-text p, .dg-text p {
-    font-size: 22px;
+    font-size: 18px;
   }
   
   .it-section h2 {
-    right: -800px;
+    margin-left: 800px;
   }
   
-  .it-image img {
-    right: -650px;
+  .it-image {
+    margin-left: 650px;
   }
   
-  .it-text h3 {
-    left: 250px;
+  .erp-text, .dg-text {
+    margin-left: 400px;
+    max-width: 750px;
   }
   
-  .it-text p {
-    left: -250px;
+  .it-text {
+    max-width: 700px;
+    margin-left: 100px;
   }
   
-  .btn2, .btn3 {
+  .btn2, .btn3, .btn4 {
     font-size: 26px;
     width: 220px;
     height: 55px;
   }
   
   .btn3 {
-    left: 550px;
+    margin-left: 450px;
   }
 }
 
@@ -377,6 +414,7 @@ font-family: 'Poppins';
     padding-top: 60px;
     padding-left: 20px;
     padding-right: 20px;
+    min-height: auto;
   }
   
   .Rectangle5 h1 {
@@ -384,56 +422,59 @@ font-family: 'Poppins';
   }
   
   .erp-section h2, .dg-section h2 {
-    left: 20px;
+    margin-left: 30px;
     font-size: 40px;
   }
   
   .it-section h2 {
-    right: -600px;
+    margin-left: auto;
+    margin-right: 30px;
     font-size: 40px;
   }
   
-  .erp-image img, .it-image img, .dg-image img {
+  .erp-image, .dg-image {
+    margin-left: 30px;
+  }
+  
+  .erp-image img, .dg-image img {
     width: 350px;
     height: 250px;
-    left: 30px;
+  }
+  
+  .it-image {
+    margin-left: auto;
+    margin-right: 30px;
+    float: right;
   }
   
   .it-image img {
-    right: -500px;
+    width: 350px;
+    height: 250px;
   }
   
-  .erp-text h3, .dg-text h3 {
-    left: 400px;
-    width: 600px;
+  .erp-text, .dg-text {
+    margin-left: 400px;
+    margin-top: -230px;
+    max-width: 550px;
+  }
+  
+  .it-text {
+    margin-left: 30px;
+    margin-right: 400px;
+    margin-top: 20px;
+    max-width: 500px;
+  }
+  
+  .erp-text h3, .it-text h3, .dg-text h3 {
     font-size: 26px;
-    margin-top: -480px;
   }
   
-  .it-text h3 {
-    left: 150px;
-    width: 600px;
-    font-size: 26px;
-    margin-top: -150px;
-  }
-  
-  .erp-text p, .dg-text p {
-    margin-top: -280px;
-    left: -50px;
-    font-size: 20px;
-  }
-  
-  .it-text p {
-    left: -200px;
-    font-size: 20px;
-  }
-  
-  .btn2 {
-    left: 400px;
+  .erp-text p, .it-text p, .dg-text p {
+    font-size: 17px;
   }
   
   .btn3 {
-    left: 450px;
+    margin-left: 320px;
   }
 }
 
@@ -441,54 +482,76 @@ font-family: 'Poppins';
 @media screen and (max-width: 768px) {
   .services {
     padding-top: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   
   .Rectangle5 {
-    padding: 20px;
+    padding: 15px;
   }
   
   .Rectangle5 h1 {
     font-size: 40px;
   }
   
+  .erp-section, .it-section, .dg-section {
+    margin-bottom: 60px;
+  }
+  
   .erp-section h2, .it-section h2, .dg-section h2 {
     font-size: 32px;
-    left: 20px !important;
-    right: auto !important;
-    width: auto;
-    max-width: 90%;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    display: block;
+    max-width: 100%;
+  }
+  
+  .erp-image, .it-image, .dg-image {
+    margin: 20px auto;
+    display: block;
+    float: none;
   }
   
   .erp-image img, .it-image img, .dg-image img {
-    width: 300px;
-    height: 220px;
-    left: 20px !important;
-    right: auto !important;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+  }
+  
+  /* Hide borders on mobile for cleaner look */
+  .erp-image .section-border,
+  .it-image .section-border,
+  .dg-image .section-border {
+    display: none;
+  }
+  
+  .erp-text, .it-text, .dg-text {
+    margin-left: 20px;
+    margin-right: 20px;
     margin-top: 20px;
+    max-width: 100%;
+    text-align: center;
+    float: none;
+  }
+  
+  .it-text {
+    text-align: center;
   }
   
   .erp-text h3, .it-text h3, .dg-text h3 {
-    left: 20px !important;
-    right: auto !important;
-    margin-top: 20px;
-    width: 90%;
-    max-width: 600px;
     font-size: 24px;
-    white-space: normal;
+    margin-top: 0;
   }
   
   .erp-text p, .it-text p, .dg-text p {
-    left: 20px !important;
-    right: auto !important;
-    margin-top: 20px;
-    width: 90%;
-    font-size: 18px;
+    font-size: 16px;
   }
   
-  .btn2, .btn3 {
-    left: 20px !important;
-    right: auto !important;
-    top: 20px;
+  .btn2, .btn3, .btn4 {
+    margin: 20px auto;
+    display: block;
     width: 200px;
     height: 50px;
     font-size: 22px;
@@ -499,50 +562,52 @@ font-family: 'Poppins';
 @media screen and (max-width: 480px) {
   .services {
     padding-top: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   
   .Rectangle5 {
-    padding: 15px;
+    padding: 12px;
   }
   
   .Rectangle5 h1 {
     font-size: 32px;
   }
   
+  .erp-section, .it-section, .dg-section {
+    margin-bottom: 50px;
+  }
+  
   .erp-section h2, .it-section h2, .dg-section h2 {
     font-size: 28px;
-    left: 15px !important;
+    margin-left: 15px;
+    margin-right: 15px;
     margin-top: 30px;
   }
   
   .erp-image img, .it-image img, .dg-image img {
     width: 100%;
-    max-width: 280px;
-    height: auto;
-    left: 15px !important;
+    max-width: 100%;
+    margin: 15px auto;
+  }
+  
+  .erp-text, .it-text, .dg-text {
+    margin-left: 15px;
+    margin-right: 15px;
     margin-top: 15px;
   }
   
   .erp-text h3, .it-text h3, .dg-text h3 {
-    left: 15px !important;
-    margin-top: 15px;
-    width: calc(100% - 30px);
     font-size: 20px;
   }
   
   .erp-text p, .it-text p, .dg-text p {
-    left: 15px !important;
-    margin-top: 15px;
-    width: calc(100% - 30px);
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.6;
   }
   
-  .btn2, .btn3 {
-    left: 15px !important;
-    top: 15px;
+  .btn2, .btn3, .btn4 {
+    margin: 15px auto;
     width: 180px;
     height: 45px;
     font-size: 20px;
@@ -565,10 +630,10 @@ font-family: 'Poppins';
   }
   
   .erp-text p, .it-text p, .dg-text p {
-    font-size: 14px;
+    font-size: 13px;
   }
   
-  .btn2, .btn3 {
+  .btn2, .btn3, .btn4 {
     width: 160px;
     height: 40px;
     font-size: 18px;
