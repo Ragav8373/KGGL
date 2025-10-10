@@ -68,22 +68,10 @@
   margin-bottom: 0;
   font-size: 0.95rem;
 }
-
-/* Responsive tweaks */
 @media (max-width: 768px) {
   .footer-wrapper {
-    padding: 1.5rem;
-  }
-
-  .hoverani {
-    font-size: 26px;
-  }
-
-  .contactmain {
-    font-size: 1rem;
-  }
-
-  .contactpara {
-    font-size: 0.9rem;
+    flex-direction: column; 
+    padding: 1rem; 
   }
 }
+

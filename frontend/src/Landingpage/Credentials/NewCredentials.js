@@ -1,6 +1,6 @@
 import React from 'react';
 import './NewCredentials.css';
-import managerImage from "../Asset/manager.png"; 
+import managerImage from "../Asset/cripumps.png"; 
 import mlogoImage from "../Asset/mlogo.png"; 
 import qt1Image from "../Asset/qt-com 1.png"; 
 import qt2Image from "../Asset/qt-com 2.png"; 
@@ -48,13 +48,19 @@ function NewCredentials() {
       </div>
       <div>
         <h1 className='headline2'>Real Stories. Real Success.</h1>
-        <div class="border-wrapper"></div>
-        <div className='bgimg'><img src={managerImage} alt="img" /></div>
+        <div class="border-wrapper">
+                  <div className='bgimg'><img src={managerImage} alt="img" /></div>
         <span className='headline3'>Deepak KV-Manager IT</span>
         <img src={mlogoImage} alt="img"  className='mlogoimg'/>
-        <p className='mtext'>Recently we have taken SAP Functional modules training program from KG Genius Labs. The KG Genius Labs training has significantly enhanced our team's skills, and the course was expertly designed and delivered, providing a comprehensive understanding of SAP functionalities that are crucial for our operations. I highly recommend this program to any organization looking to empower their workforce with essential SAP knowledge.</p>
-        <img src={qt1Image} alt="img"  className='qt1'/>
-        <img src={qt2Image} alt="img"  className='qt2'/>
+        </div>
+        <div className="quote-wrapper">
+          <img src={qt1Image} alt="quote start" className="qt-icon qt-left" />
+          <p className="mtext">
+            Recently we have taken SAP Functional modules training program from KG Genius Labs. The KG Genius Labs training has significantly enhanced our team's skills, and the course was expertly designed and delivered, providing a comprehensive understanding of SAP functionalities that are crucial for our operations. I highly recommend this program to any organization looking to empower their workforce with essential SAP knowledge.
+          </p>
+          <img src={qt2Image} alt="quote end" className="qt-icon qt-right" />
+        </div>
+
       </div>
       <div>
         <div className='clientheadline-wrapper'>
