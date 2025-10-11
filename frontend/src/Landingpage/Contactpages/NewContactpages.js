@@ -17,7 +17,7 @@ function NewContactpages() {
   });
   const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
-  const [requestType, setRequestType] = useState(""); // State for request type
+  const [requestType, setRequestType] = useState("");
 
   useEffect(() => {
     axios
@@ -41,12 +41,14 @@ function NewContactpages() {
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return emailRegex.test(email);
   };
+
   const validateName = (username) => {
     const nameRegex = /^[A-Za-z\s.]{2,}$/;
     return nameRegex.test(username);
   };
+
   const validatePhoneNumber = (phoneNumber) => {
-    const phoneRegex = /^[0-9]{7,15}$/; // Adjusted to ensure the number is between 7 and 15 digits
+    const phoneRegex = /^[0-9]{7,15}$/;
     return phoneRegex.test(phoneNumber);
   };
 
@@ -55,10 +57,11 @@ function NewContactpages() {
       /^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,6})([\/\w .-]*)*\/?$/;
     return urlRegex.test(url);
   };
+
   const validateForm = () => {
     const newErrors = {};
     if (!requestType) {
-      newErrors.requestType = "Please select a request type."; // Ensure this is set
+      newErrors.requestType = "Please select a request type.";
     }
     if (!formData.email || !validateEmail(formData.email)) {
       newErrors.email = "Invalid email address.";
@@ -69,12 +72,6 @@ function NewContactpages() {
     if (!formData.phoneNumber || !validatePhoneNumber(formData.phoneNumber)) {
       newErrors.phoneNumber = "Enter Valid Phone Number";
     }
-    // if (
-    //   !formData.whatsappnumber ||
-    //   !validatePhoneNumber(formData.whatsappnumber)
-    // ) {
-    //   newErrors.whatsappnumber = "Enter Valid Phone Number";
-    // }
     if (!formData.companyWebsite || !validateWebsite(formData.companyWebsite)) {
       newErrors.companyWebsite = "Please enter a valid website URL.";
     }
@@ -87,7 +84,6 @@ function NewContactpages() {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
 
-    // Validate fields on change
     if (name === "username") {
       if (!validateName(value)) {
         setErrors((prev) => ({ ...prev, username: "Invalid name" }));
@@ -102,7 +98,6 @@ function NewContactpages() {
         setErrors((prev) => ({ ...prev, email: undefined }));
       }
     }
-
     if (name === "phoneNumber") {
       if (!validatePhoneNumber(value)) {
         setErrors((prev) => ({
@@ -113,7 +108,6 @@ function NewContactpages() {
         setErrors((prev) => ({ ...prev, phoneNumber: undefined }));
       }
     }
-
     if (name === "companyWebsite") {
       if (!validateWebsite(value)) {
         setErrors((prev) => ({ ...prev, companyWebsite: "Enter valid URL" }));
@@ -129,12 +123,10 @@ function NewContactpages() {
     if (!validateForm()) return;
 
     const fullPhoneNumber = `${selectedCountryCode}${formData.phoneNumber}`;
-    const fullwhatsappnumber = `${selectedCountryCode}${formData.whatsappnumber}`;
     const formValues = {
       username: formData.username,
       email: formData.email,
       phno: fullPhoneNumber,
-      // whatsappnumber: fullwhatsappnumber,
       company_name: formData.companyName,
       company_site: formData.companyWebsite,
       message: formData.description,
@@ -175,148 +167,170 @@ function NewContactpages() {
       description: "",
     });
     setSelectedCountryCode("+91");
-    setRequestType(""); // Reset request type
+    setRequestType("");
     setErrors({});
   };
 
   return (
-  <div className="contact-wrapper">
-    <ToastContainer />
-    <div className="contact-left">
-      <h1 className="contact-title">Let’s Connect</h1>
-      <p className="contact-subtitle">
-        Explore how our customized IT solutions can elevate your business. Get in touch with our experts today!
-      </p>
-      <button className="contact-btn-outline">Contact Us</button>
-    </div>
-
-    <div className="contact-right">
-      <form onSubmit={handleSubmit} className="contact-form">
-        <h4 className="form-title">Request a meeting with our experts</h4>
-
-        <label>Name</label>
-        <input
-          type="text"
-          placeholder="Ex: Harris James"
-          className="form-control"
-          name="username"
-          value={formData.username}
-          onChange={handleChange}
-          required
-        />
-        {errors.username && (
-          <small className="text-danger">{errors.username}</small>
-        )}
-
-        <label>Mobile Number</label>
-        <div className="input-row">
-          <select
-            value={selectedCountryCode}
-            onChange={(e) => setSelectedCountryCode(e.target.value)}
-            required
-          >
-            {countryCodes.map((country, index) => (
-              <option key={index} value={country.code}>
-                {country.name} ({country.code})
-              </option>
-            ))}
-          </select>
-          <input
-            type="tel"
-            placeholder="Enter your phone number"
-            className="form-control"
-            name="phoneNumber"
-            value={formData.phoneNumber}
-            onChange={handleChange}
-            required
-            pattern="[0-9]*"
-            maxLength="15"
-          />
-        </div>
-        {errors.phoneNumber && (
-          <small className="text-danger">{errors.phoneNumber}</small>
-        )}
-
-        <label>Request Type</label>
-        <select
-          className="form-control"
-          onChange={(e) => {
-            setRequestType(e.target.value);
-            if (e.target.value) {
-              setErrors((prev) => ({ ...prev, requestType: undefined }));
-            }
-          }}
-          required
-        >
-          <option value="">Ex: Contact Sales</option>
-          <option value="1">Contact Sales</option>
-          <option value="2">General Inquiry</option>
-          <option value="3">Partner Inquiry</option>
-        </select>
-        {errors.requestType && (
-          <small className="text-danger">{errors.requestType}</small>
-        )}
-
-        <label>Email ID</label>
-        <input
-          type="email"
-          placeholder="Ex: harrispumps@gmail.com"
-          className="form-control"
-          name="email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
-        {errors.email && (
-          <small className="text-danger">{errors.email}</small>
-        )}
-
-        <label>Company Name</label>
-        <input
-          type="text"
-          className="form-control"
-          name="companyName"
-          value={formData.companyName}
-          onChange={handleChange}
-          placeholder="Ex: Harris Pumps"
-          required
-        />
-
-        <label>Company Website</label>
-        <input
-          type="url"
-          className="form-control"
-          name="companyWebsite"
-          value={formData.companyWebsite}
-          onChange={handleChange}
-          placeholder="Ex: www.harrispumps.com"
-          required
-        />
-        {errors.companyWebsite && (
-          <small className="text-danger">{errors.companyWebsite}</small>
-        )}
-
-        <label>Description</label>
-        <textarea
-          className="form-control"
-          name="description"
-          rows="3"
-          value={formData.description}
-          onChange={handleChange}
-        ></textarea>
-
-        <button type="submit" className="btn-gradient" disabled={loading}>
-          {loading ? "Submitting..." : "Submit"}
-        </button>
-
-        <p className="privacy-text">
-          The information you provide in this form will be used to process your request and keep you informed about our services. In line with KG Genius Labs’s <a href="#">Privacy Policy</a>
+    <div className="contact-wrapper">
+      <ToastContainer />
+      <div className="contact-left">
+        <h1 className="contact-title">Let's Connect</h1>
+        <p className="contact-subtitle">
+          Explore how our customized IT solutions can elevate your business. Get in touch with our experts today!
         </p>
-      </form>
-    </div>
-  </div>
-);
+        <button className="contact-btn-outline">Contact Us</button>
+      </div>
 
+      <div className="contact-right">
+        <form onSubmit={handleSubmit} className="contact-form">
+          <h4 className="form-title">Request a meeting with our experts</h4>
+
+          <div className="form-row">
+            <div className="form-group">
+              <label>Name</label>
+              <input
+                type="text"
+                placeholder="Ex: Harris James"
+                className="form-control"
+                name="username"
+                value={formData.username}
+                onChange={handleChange}
+                required
+              />
+              {errors.username && (
+                <small className="text-danger">{errors.username}</small>
+              )}
+            </div>
+
+            <div className="form-group">
+              <label>Mobile Number</label>
+              <div className="input-row">
+                <select
+                  value={selectedCountryCode}
+                  onChange={(e) => setSelectedCountryCode(e.target.value)}
+                  required
+                >
+                  {countryCodes.map((country, index) => (
+                    <option key={index} value={country.code}>
+                      {country.name} ({country.code})
+                    </option>
+                  ))}
+                </select>
+                <input
+                  type="tel"
+                  placeholder="Enter your phone number"
+                  className="form-control"
+                  name="phoneNumber"
+                  value={formData.phoneNumber}
+                  onChange={handleChange}
+                  required
+                  pattern="[0-9]*"
+                  maxLength="15"
+                />
+              </div>
+              {errors.phoneNumber && (
+                <small className="text-danger">{errors.phoneNumber}</small>
+              )}
+            </div>
+          </div>
+
+          <div className="form-row">
+            <div className="form-group">
+              <label>Request Type</label>
+              <select
+                className="form-control"
+                value={requestType}
+                onChange={(e) => {
+                  setRequestType(e.target.value);
+                  if (e.target.value) {
+                    setErrors((prev) => ({ ...prev, requestType: undefined }));
+                  }
+                }}
+                required
+              >
+                {/* <option value="">Ex: Contact Sales</option> */}
+                <option value="1">Contact Sales</option>
+                <option value="2">General Inquiry</option>
+                <option value="3">Partner Inquiry</option>
+              </select>
+              {errors.requestType && (
+                <small className="text-danger">{errors.requestType}</small>
+              )}
+            </div>
+
+            <div className="form-group">
+              <label>Email ID</label>
+              <input
+                type="email"
+                placeholder="Ex: harrispumps@gmail.com"
+                className="form-control"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+              />
+              {errors.email && (
+                <small className="text-danger">{errors.email}</small>
+              )}
+            </div>
+          </div>
+
+          <div className="form-row">
+            <div className="form-group">
+              <label>Company Name</label>
+              <input
+                type="text"
+                className="form-control"
+                name="companyName"
+                value={formData.companyName}
+                onChange={handleChange}
+                placeholder="Ex: Harris Pumps"
+                required
+              />
+            </div>
+
+            <div className="form-group">
+              <label>Company Website</label>
+              <input
+                type="url"
+                className="form-control"
+                name="companyWebsite"
+                value={formData.companyWebsite}
+                onChange={handleChange}
+                placeholder="Ex: www.harrispumps.com"
+                required
+              />
+              {errors.companyWebsite && (
+                <small className="text-danger">{errors.companyWebsite}</small>
+              )}
+            </div>
+          </div>
+
+          <div className="form-row">
+            <div className="form-group form-group-full">
+              <label>Description</label>
+              <textarea
+                className="form-control"
+                name="description"
+                rows="3"
+                value={formData.description}
+                onChange={handleChange}
+              ></textarea>
+            </div>
+          </div>
+
+          <button type="submit" className="btn-gradient" disabled={loading}>
+            {loading ? "Submitting..." : "Submit"}
+          </button>
+
+          <p className="privacy-text">
+            The information you provide in this form will be used to process your request and keep you inform about our services, in line with KG Genius Lab's Privacy Policy <a href="#">Privacy Policy</a>
+          </p>
+        </form>
+      </div>
+    </div>
+  );
 }
 
 export default NewContactpages;

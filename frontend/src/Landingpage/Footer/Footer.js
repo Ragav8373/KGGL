@@ -32,21 +32,21 @@ const year = date.getFullYear();
           <Link to="/aboutus" className="nav-link"><p>About Us</p></Link>  
           <Sclink to="ourservices" className="nav-link"><p>Services</p></Sclink>
           <Link to="/blog" className="nav-link"><p>Blog</p></Link>
-          <Link to="/contact" className="nav-link"><p>Contact Us</p></Link>
+          {/* <Link to="/contact" className="nav-link"><p>Contact Us</p></Link> */}
           <hr className="d-sm-block d-lg-none custom-hr"/>
         </div>
         <div className='col-sm-4 col-lg-3'>
           <h4><b>Services</b></h4>
 
            <Link to="/custom-erp-software-solution" className="nav-link ms-1">
-             <p>KG Genius ERP</p>
+             <p>ERP Software</p>
            </Link>
-           <Link to="/sap-services" className="nav-link ms-1">
+           {/* <Link to="/sap-services" className="nav-link ms-1">
              <p>SAP Services</p>
-           </Link>
+           </Link> */}
           <Link to="/it-services" className="nav-link ms-1"><p>IT Services</p></Link> 
           <Link to="/digital-marketing-services-coimbatore" className="nav-link ms-1"><p>Digital Marketing Services</p></Link>
-          <Link to="/hr-consultancy" className="nav-link ms-1"><p>HR Consultancy</p></Link>
+          {/* <Link to="/hr-consultancy" className="nav-link ms-1"><p>HR Consultancy</p></Link> */}
           <hr className="d-sm-block d-lg-none custom-hr"/>
         </div>
         <div className='col-sm-4 col-lg-2'>
@@ -78,8 +78,8 @@ const year = date.getFullYear();
 </div>
 
         <div className='col-sm-4 col-lg-3'>
-          <p>A Division of</p>
-          <a href="https://www.kgisl.com/"><img src={kgisllogo} title='KGiSL' alt="KGISL Logo" className="kgisllogo" height={50} width={150}/></a> 
+          {/* <p>A Division of</p>
+          <a href="https://www.kgisl.com/"><img src={kgisllogo} title='KGiSL' alt="KGISL Logo" className="kgisllogo" height={50} width={150}/></a>  */}
           <div className='d-flex flex-column justify-content-center'>
           <div>
           <p className='mt-3'>Follow us on</p>                                                                                    

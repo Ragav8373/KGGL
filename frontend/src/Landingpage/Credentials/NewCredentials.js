@@ -46,6 +46,8 @@ function NewCredentials() {
         <div className="stat-box">7+ <br /> <span>Countries</span></div>
         <div className="stat-box">270+ <br /> <span>Clients</span></div>
       </div>
+
+      {/* { feedback} */}
       <div>
         <h1 className='headline2'>Real Stories. Real Success.</h1>
         <div class="border-wrapper">
@@ -62,6 +64,9 @@ function NewCredentials() {
         </div>
 
       </div>
+
+
+      {/* {client section} */}
       <div>
         <div className='clientheadline-wrapper'>
        <span className='clientheadline'>Our Clients</span>
