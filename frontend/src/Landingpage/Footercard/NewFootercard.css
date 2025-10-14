@@ -1,5 +1,5 @@
 .bgclrfooter {
-  background-color: #f8f9fa;
+  background: linear-gradient(to bottom, white 50%, #291571 50%);
 }
 
 /* Footer Card Wrapper with Gradient Border */

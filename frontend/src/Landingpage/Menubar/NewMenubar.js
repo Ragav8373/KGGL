@@ -1,35 +1,75 @@
-import React, { useState } from "react";
-import "./NewMenubar.css";  
+import React, { useState } from 'react';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import { Link } from 'react-router-dom';
 import logo from "../../Asset/Logo Tagline-02 (1).png";
+import "./NewMenubar.css";
+import NewCareer from '../../Career/NewCareer';
 
 function NewMenubar() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [expanded, setExpanded] = useState(false); 
+  const [erpDropdownOpen, setErpDropdownOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen(!isOpen);
+  const handleToggle = () => setExpanded(!expanded);
+  const handleSelect = () => setExpanded(false);
+  const toggleErpDropdown = () => setErpDropdownOpen(!erpDropdownOpen);
 
   return (
-    <nav className="navbar">
-      {/* Logo */}
-      <div className="logo-container">
-        <img src={logo} alt="KG Genius Labs Logo" className="logo-img" />
-      </div>
+    <Navbar expand="lg" expanded={expanded} className="navbox">
+      <Container>
+        <Navbar.Brand as={Link} to="/">
+          <img src={logo} className="logsiz" alt="KG Genius Labs" />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleToggle} />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mx-auto">
+            <Nav.Link as={Link} to="/" className="navtext" onClick={handleSelect}>Home</Nav.Link>
+            <Nav.Link as={Link} to="/aboutus" className="navtext" onClick={handleSelect}>About Us</Nav.Link>
+            <Nav.Link as={Link} to="/career" className="navtext" onClick={handleSelect}>Career</Nav.Link>
+            {/* Our Services Dropdown */}
+            <NavDropdown title={<span className="navtext1">Our Services</span>} id="services-dropdown">
+              {/* ERP Services with nested dropdown */}
+            
 
-      {/* Hamburger menu */}
-      <div className="hamburger" onClick={toggleMenu}>
-        <div className={`bar ${isOpen ? "change" : ""}`}></div>
-        <div className={`bar ${isOpen ? "change" : ""}`}></div>
-        <div className={`bar ${isOpen ? "change" : ""}`}></div>
-      </div>
+              <div
+                className="dropdown-item navtext1"
+                onClick={toggleErpDropdown}
+                style={{ cursor: "pointer" }}
+              >
+                ERP Services
+              </div>
+              {erpDropdownOpen && (
+                <div className="dropdown-submenu">
+                  <NavDropdown.Item as={Link} to="/sap-services" className="navtext1" onClick={handleSelect}>
+                    SAP Services
+                  </NavDropdown.Item>
+                  <NavDropdown.Item as={Link} to="/custom-erp-software-solution" className="navtext1" onClick={handleSelect}>
+                    KG Genius ERP
+                  </NavDropdown.Item>
+                </div>
+              )}
+              <NavDropdown.Item as={Link} to="/it-services" className="navtext1" onClick={handleSelect}>
+                IT Services
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/digital-marketing-services-coimbatore" className="navtext1" onClick={handleSelect}>
+                Digital Marketing Services
+              </NavDropdown.Item>
+              <NavDropdown.Item as={Link} to="/hr-consultancy" className="navtext1" onClick={handleSelect}>
+                HR Consultancy
+              </NavDropdown.Item>
+            </NavDropdown>
 
-      {/* Navigation Links */}
-      <ul className={`nav-links ${isOpen ? "open" : ""}`}>
-        <li><a href="#home" onClick={toggleMenu}>Home</a></li>
-        <li><a href="#about" onClick={toggleMenu}>About Us</a></li>
-        <li><a href="#services" onClick={toggleMenu}>Services</a></li>
-        <li><a href="#testimonials" onClick={toggleMenu}>Testimonials</a></li>
-        <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
-      </ul>
-    </nav>
+            <Nav.Link as={Link} to="/blog" className="navtext" onClick={handleSelect}>Blog</Nav.Link>
+          </Nav>
+
+          <Nav className="ms-auto">
+            <Nav.Link as={Link} to="/contact" className="contactbutton" onClick={handleSelect}>Contact Us</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 

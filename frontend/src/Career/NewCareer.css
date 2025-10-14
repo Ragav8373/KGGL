@@ -1,0 +1,99 @@
+
+    *{
+        font-family: Poppins, sans-serif;
+    }
+
+    main{
+        display: flex;
+        justify-content: center;
+    }
+
+    .card {
+    margin: 20px auto;
+    width: 90%;
+    background-color: white;
+    border-radius: 24px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px 0;
+
+    /* Better shadow */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* soft shadow */
+    transition: box-shadow 0.3s ease;
+}
+
+
+    .card-items{
+        background: linear-gradient(90deg, #1C1559 0%, #3C2EBF 38.35%, #ED1C24 147.7%);
+
+        margin: 10px;
+        border-radius: 8px;
+        width: 98%;
+        overflow: hidden; /* required for collapse */
+        transition: all 0.4s ease;
+        position: relative;
+        /* remove fixed height */
+    }
+
+    /* Headings */
+    .card-items h4{
+        font-weight: 900;
+        color: white;
+        padding: 20px 20px 0 20px;
+    }
+
+    /* Paragraph 3-line preview */
+    .card-items p{
+        margin: 10px 0;
+        padding: 0 20px 20px 20px;
+        color: white;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;      /* show only 3 lines */
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        transition: all 0.4s ease;
+    }
+
+    /* Expand full paragraph */
+    .card-items.expanded p{
+        -webkit-line-clamp: unset;
+    }
+
+    .card-items ul {
+    margin: 10px 0;
+    padding: 0 20px 20px 20px;
+    color: white;
+    display: -webkit-box;           /* for line-clamp effect */
+    -webkit-line-clamp: 1;          /* show only 3 lines initially */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    list-style-position: inside;    /* optional, bullets inside padding */
+}
+
+.card-items.expanded ul {
+    -webkit-line-clamp: unset;      /* show full list when expanded */
+}
+
+
+    /* Read more button */
+   .card-items button {
+    display: block;            /* makes margin auto work */
+    margin: 0 auto 20px auto;  /* top 0, horizontal auto, bottom 20px */
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    color: white;
+    background: transparent;
+    transition: background 0.3s;
+    text-align: center;        /* center text inside button */
+}
+
+    .card-items button:hover{
+        background: rgba(255,255,255,0.35);
+    }

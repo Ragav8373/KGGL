@@ -3,7 +3,7 @@ import "./NewFootercard.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot, faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
-function Footercard() {
+function NewFootercard() {
   return (
     <div className='container-fluid bgclrfooter mt-5 py-3'>
       <div className='container'>
@@ -50,4 +50,4 @@ function Footercard() {
   );
 }
 
-export default Footercard;
+export default NewFootercard;

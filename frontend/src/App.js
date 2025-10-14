@@ -7,6 +7,7 @@ import Credentials from "./Landingpage/Credentials/Credentials";
 import NewCredentials from "./Landingpage/Credentials/NewCredentials";  //new
 import Menubar from "./Landingpage/Menubar/Menubar";
 import NewMenubar from "./Landingpage/Menubar/NewMenubar"; //new
+
 import Footer from "./Landingpage/Footer/Footer";
 import Footercard from "./Landingpage/Footercard/Footercard";
 import NewFootercard from "./Landingpage/Footercard/NewFootercard"; //new
@@ -105,6 +106,8 @@ import DMLFoot from "./DigitalMarketing/DMLandingpage/DMLFoot/DMLFoot";
 import DMLandingMenubar from "./DigitalMarketing/DMLandingpage/DMLandingMenubar/DMLandingMenubar";
 import Buttonarea from "./DigitalMarketing/DMLandingpage/DMServices/Buttonarea";
 import ClientSection from "./ClientSection/ClientSection";
+import NewCareer from "./Career/NewCareer";
+
 
 
 function App() {
@@ -136,6 +139,11 @@ function App() {
               <Autopopup />
             ]}
           />
+
+            <Route
+             path="/career"
+             element={<NewCareer/>}
+            />           
           <Route
             path="/aboutus"
             element={[
@@ -145,7 +153,7 @@ function App() {
               <Evolution />,
               <Mission />,
               <Whygeniuslabs />,
-              <Footercard />,
+              <NewFootercard />,
               <Footerabout />,
             ]}
           />
@@ -160,7 +168,7 @@ function App() {
               <Clientpage />,
               <Corevalues />,
               <Discover />,
-              <Footercard />,
+              <NewFootercard />,
               <Hrfooter />,
               <Autopopup />
             ]}
