@@ -1,12 +1,8 @@
+/* Outer glow background */
 .hero0 {
   padding: 30px;
   border-radius: 2px;
-  background: linear-gradient(
-    90deg,
-    #5C4FDA 31.73%,
-    #ED1C24 59.62%,
-    #312A74 91.35%
-  );
+  background: linear-gradient(90deg, #5C4FDA 31.73%, #ED1C24 59.62%, #312A74 91.35%);
   background-size: 300% 300%;
   box-shadow: 0 0 40px rgba(92, 79, 218, 0.6),
               0 0 60px rgba(237, 28, 36, 0.5),
@@ -15,6 +11,65 @@
              gradientShift 10s ease-in-out infinite;
 }
 
+/* Inner Hero Gradient (Your original flex box) */
+.hero {
+  border-radius: 20px;
+  background: linear-gradient(
+    90deg,
+    rgba(28, 21, 89, 1) 0%,
+    rgba(49, 42, 116, 1) 50%,
+    rgba(92, 79, 218, 1) 100%
+  );
+  color: #fff;
+  padding: 40px 30px;
+}
+
+.rectangle3 {
+  display: inline-block;
+  padding: 12px 60px;
+  border-radius: 60px;
+  border: 6px solid transparent;
+  background: linear-gradient(#1C1559, #1C1559) padding-box,
+              linear-gradient(90deg, #3C2EBF 16.82%, #ED1C24 100%) border-box;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+/* Hover glow effect */
+.rectangle3:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 25px rgba(60, 46, 191, 0.5),
+              0 0 35px rgba(237, 28, 36, 0.4);
+}
+
+/* Moving shine effect */
+/* .rectangle3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255,255,255,0.3), transparent);
+  transition: left 0.6s ease;
+  border-radius: inherit;
+}
+
+.rectangle3:hover::before {
+  left: 100%;
+} */
+
+
+
+
+/* Animations */
 @keyframes glowPulse {
   0% {
     box-shadow: 0 0 30px rgba(92, 79, 218, 0.4),
@@ -34,263 +89,19 @@
   100% { background-position: 0% 50%; }
 }
 
-/* === Hero Section === */
-.hero {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 101px;
-  border-radius: 20px;
-  flex-wrap: wrap;
-  background: linear-gradient(
-    90deg,
-    rgba(28, 21, 89, 1) 0%,
-    rgba(49, 42, 116, 1) 50%,
-    rgba(92, 79, 218, 1) 100%
-  );
-  color: #fff;
-}
-
-.hero-content {
-  flex: 1 1 500px;
-  text-align: left;
-  margin-bottom: 30px;
-}
-
-.hero-content h1 {
-  font-family: "Poppins", sans-serif;
-  position: relative;
-  left: -80px;
-  font-weight: 600;
-  font-size: 45px;
-  line-height: 1.2;
-  margin-bottom: 20px;
-}
-
-.hero-content p {
-  font-family: "Poppins", sans-serif;
-  position: relative;
-  left: -80px;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 1.4;
-}
-
-/* CTA Button */
-.rectangle3 {
-  display: inline-block;
-  position: relative;
-  left: -80px;
-  margin-top: 20px;
-  padding: 12px 80px;
-  border-radius: 60px;
-  border: 8px solid transparent;
-  background: linear-gradient(#1C1559, #1C1559) padding-box,
-              linear-gradient(90deg, #3C2EBF 16.82%, #ED1C24 100%) border-box;
-  color: white;
-  font-size: 18px;
-  font-weight: 600;
-  text-align: center;
-  cursor: pointer;
-  transition: transform 0.3s;
-}
-
-.rectangle3:hover {
-  transform: scale(1.05);
-}
-
-/* Hero Image */
-.hero-image {
-  flex: 1 1 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.hero-image img {
-  position: relative;
-  left: 80px;
-  width: 624px;
-  height: 454px;
-  border-radius: 20px;
-  object-fit: cover;
-}
-
-/* === RESPONSIVE DESIGN === */
-
-/* Large Desktop (1440px and above) - Original design maintained */
-@media (min-width: 1440px) {
-  .hero {
-    padding: 30px 101px;
-  }
-}
-
-/* Desktop (1200px - 1439px) */
-@media (max-width: 1439px) {
-  .hero {
-    padding: 30px 60px;
-  }
-  
-  .hero-content h1 {
-    left: -40px;
-    font-size: 42px;
-  }
-  
-  .hero-content p {
-    left: -40px;
-    font-size: 20px;
-  }
-  
+/* Responsive */
+@media (max-width: 768px) {
   .rectangle3 {
-    left: -40px;
-    padding: 12px 70px;
-  }
-  
-  .hero-image img {
-    left: 40px;
-    width: 550px;
-    height: 400px;
-  }
-}
-
-/* Tablet (768px - 1199px) */
-@media (max-width: 1199px) {
-  .hero {
-    padding: 30px 40px;
-    flex-direction: column;
-  }
-  
-  .hero-content {
-    flex: 1 1 100%;
-    text-align: center;
-    margin-bottom: 40px;
-  }
-  
-  .hero-content h1 {
-    left: 0;
-    font-size: 38px;
-  }
-  
-  .hero-content p {
-    left: 0;
+    padding: 10px 45px;
     font-size: 18px;
-  }
-  
-  .rectangle3 {
-    left: 0;
-    padding: 12px 60px;
-    font-size: 17px;
-  }
-  
-  .hero-image {
-    flex: 1 1 100%;
-  }
-  
-  .hero-image img {
-    left: 0;
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    aspect-ratio: 624 / 454;
+    border-width: 5px;
   }
 }
 
-/* Mobile Large (576px - 767px) */
-@media (max-width: 767px) {
-  .hero {
-    padding: 25px 30px;
-  }
-  
-  .hero-content h1 {
-    font-size: 32px;
-    margin-bottom: 15px;
-  }
-  
-  .hero-content p {
+@media (max-width: 480px) {
+  .rectangle3 {
+    padding: 8px 35px;
     font-size: 16px;
-  }
-  
-  .rectangle3 {
-    padding: 10px 50px;
-    font-size: 16px;
-    border: 6px solid transparent;
-  }
-  
-  .hero-image img {
-    max-width: 500px;
-  }
-}
-
-/* Mobile Medium (480px - 575px) */
-@media (max-width: 575px) {
-  .hero {
-    padding: 20px 20px;
-  }
-  
-  .hero-content {
-    margin-bottom: 30px;
-  }
-  
-  .hero-content h1 {
-    font-size: 28px;
-  }
-  
-  .hero-content p {
-    font-size: 15px;
-  }
-  
-  .rectangle3 {
-    padding: 10px 40px;
-    font-size: 15px;
-    margin-top: 15px;
-  }
-  
-  .hero-image img {
-    max-width: 400px;
-  }
-}
-
-/* Mobile Small (320px - 479px) */
-@media (max-width: 479px) {
-  .hero {
-    padding: 20px 15px;
-  }
-  
-  .hero-content h1 {
-    font-size: 24px;
-  }
-  
-  .hero-content p {
-    font-size: 14px;
-  }
-  
-  .rectangle3 {
-    padding: 8px 30px;
-    font-size: 14px;
-    border: 5px solid transparent;
-  }
-  
-  .hero-image img {
-    max-width: 100%;
-  }
-}
-
-/* Extra Small Mobile (below 320px) */
-@media (max-width: 319px) {
-  .hero {
-    padding: 15px 10px;
-  }
-  
-  .hero-content h1 {
-    font-size: 20px;
-  }
-  
-  .hero-content p {
-    font-size: 13px;
-  }
-  
-  .rectangle3 {
-    padding: 8px 25px;
-    font-size: 13px;
+    border-width: 4px;
   }
 }

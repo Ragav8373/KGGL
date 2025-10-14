@@ -1,3 +1,4 @@
+/* Container */
 .about {
   padding: 50px 0;
   width: 100%;
@@ -5,35 +6,21 @@
   background-color: #f8f9fc;
 }
 
-.about-container {
-  max-width: 1200px;
-  margin: 0px 100px;
-  padding: 0px 49px;
-}
-
+/* Text Section */
 .about-text {
   text-align: left;
   margin-bottom: 25px;
-  /* margin-left: -100px; */
 }
 
 /* Heading */
 .about-text h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-style: normal;
   font-size: 40px;
-  line-height: 100%;
-  letter-spacing: 0;
   margin-bottom: 20px;
 
   /* Gradient Text */
-  background: linear-gradient(
-    90deg,
-    #1C1559 15.39%,
-    #3C2EBF 42.31%,
-    #ED1C24 80.76%
-  );
+  background: linear-gradient(90deg, #1C1559 15.39%, #3C2EBF 42.31%, #ED1C24 80.76%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -55,20 +42,17 @@
 }
 
 /* Image */
-.about-image {
-  margin-bottom: 20px;
-}
-
 .about-image img {
-  width: 60%;
+  width: 100%;
   max-width: 1021px;
   height: auto;
   object-fit: cover;
   border-radius: 10px;
   display: block;
-  margin: 0px -2px;
+  margin: 0 auto;
 }
 
+/* Custom Button */
 .rectangle4 {
   width: 250px;
   height: 60px;
@@ -76,7 +60,7 @@
   border-radius: 60px;
   border: 8px solid transparent;
   background: linear-gradient(white, white) padding-box,
-    linear-gradient(90deg, #3C2EBF 16.82%, #ED1C24 100%) border-box;
+              linear-gradient(90deg, #3C2EBF 16.82%, #ED1C24 100%) border-box;
   color: #1C1559;
   font-size: 30px;
   font-weight: 600;
@@ -84,166 +68,176 @@
   cursor: pointer;
   transition: transform 0.3s ease;
   
-  /* Your custom positioning */
-  margin-top: -100px;
-  margin-left: 750px;
+  margin: 350px auto 0; /* Top margin 350px, horizontally centered */
 }
 
 .rectangle4:hover {
   transform: scale(1.05);
 }
 
-/* Animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* Container */
+.about {
+  padding: 50px 0;
+  width: 100%;
+  min-height: 500px;
+  background-color: #f8f9fc;
 }
 
-/* ✅ Responsive Breakpoints */
+/* Text Section */
+.about-text {
+  text-align: left;
+  margin-bottom: 25px;
+}
 
-/* Laptop (1024px - 1200px) */
-@media (max-width: 1200px) {
-  .about-container {
-    margin: 0px 60px;
-    padding: 0 30px;
-  }
+/* Heading */
+.about-text h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, #1C1559 15.39%, #3C2EBF 42.31%, #ED1C24 80.76%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  display: inline-block;
+}
 
+/* Paragraph */
+.about-text p {
+  margin-top: 20px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  background: linear-gradient(90deg, #1C1559 0%, #3C2EBF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+/* Image */
+.about-image img {
+  width: 100%;
+  max-width: 1021px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Custom Button */
+.rectangle4 {
+  width: 250px;
+  height: 60px;
+  display: block;
+  border-radius: 60px;
+  border: 8px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(90deg, #3C2EBF 16.82%, #ED1C24 100%) border-box;
+  color: #1C1559;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  margin: 350px auto 0; /* Top margin for desktop */
+}
+
+.rectangle4:hover {
+  transform: scale(1.05);
+}
+
+/* ✅ Fully Responsive Breakpoints */
+
+/* Large Laptop/Desktop (1200px - 1600px) */
+@media (max-width: 1600px) {
   .about-text h2 {
-    font-size: 36px;
+    font-size: 38px;
   }
-
   .about-text p {
     font-size: 17px;
   }
-
-  .about-image img {
-    width: 70%;
-  }
-
   .rectangle4 {
-    font-size: 26px;
+    margin-top: 300px;
+  }
+}
+
+/* Laptop (1024px - 1200px) */
+@media (max-width: 1200px) {
+  .about-text h2 {
+    font-size: 36px;
+  }
+  .about-text p {
+    font-size: 16px;
+  }
+  .rectangle4 {
     width: 220px;
     height: 55px;
-    margin-left: 73%;
-    margin-top: -90px;
+    font-size: 26px;
+    margin-top: 250px;
   }
 }
 
 /* Tablet (768px - 992px) */
 @media (max-width: 992px) {
-  .about {
-    padding: 60px 0;
-  }
-
-  .about-container {
-    margin: 0px 40px;
-    padding: 0 20px;
-  }
-
-  .about-text {
-    text-align: center;
-  }
-
-  .about-text h2,
-  .about-text p {
-    text-align: center;
-  }
-
-  .about-image {
-    text-align: center;
-  }
-
-  .about-image img {
-    width: 85%;
-    margin: 0 auto;
-  }
-
-  .rectangle4 {
-    margin: 20px auto 30px;
-  }
-}
-
-/* Mobile (481px - 768px) */
-@media (max-width: 768px) {
-  .about-container {
-    margin: 0px 20px;
-    padding: 0 15px;
-  }
-
   .about-text h2 {
     font-size: 28px;
   }
-
   .about-text p {
     font-size: 16px;
-    margin-top: 15px;
   }
-
-  .about-image img {
-    width: 95%;
-  }
-
   .rectangle4 {
     width: 200px;
     height: 50px;
     font-size: 20px;
+    margin-top: 180px;
   }
 }
 
-/* Small Mobile (up to 480px) */
-@media (max-width: 480px) {
-  .about {
-    padding: 60px 0;
-  }
-
-  .about-container {
-    margin: 0px 10px;
-    padding: 0 15px;
-  }
-
+/* Mobile (481px - 767px) */
+@media (max-width: 767px) {
   .about-text h2 {
-    font-size: 24px;
+    font-size: 26px;
   }
-
   .about-text p {
-    font-size: 14px;
+    font-size: 15px;
   }
-
-  .about-image img {
-    width: 100%;
-  }
-
   .rectangle4 {
     width: 180px;
     height: 45px;
     font-size: 18px;
+    margin-top: 140px;
+  }
+}
+
+/* Small Mobile (360px - 480px) */
+@media (max-width: 480px) {
+  .about-text h2 {
+    font-size: 24px;
+  }
+  .about-text p {
+    font-size: 14px;
+  }
+  .rectangle4 {
+    width: 160px;
+    height: 42px;
+    font-size: 16px;
+    margin-top: 10px;
   }
 }
 
 /* Extra Small Mobile (up to 360px) */
 @media (max-width: 360px) {
-  .about-container {
-    margin: 0px 5px;
-    padding: 0 10px;
-  }
-
   .about-text h2 {
     font-size: 22px;
   }
-
   .about-text p {
     font-size: 13px;
   }
-
   .rectangle4 {
-    width: 160px;
-    height: 42px;
-    font-size: 16px;
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+    margin-top: 10px;
   }
 }
