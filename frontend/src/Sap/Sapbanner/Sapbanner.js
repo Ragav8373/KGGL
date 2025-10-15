@@ -195,7 +195,7 @@ function Sapbanner() {
               <Newimplement />
               <Sapblog />
               <Contactsap />
-              <Footercard />
+              {/* <Footercard /> */}
               <Footersap />
             </div>
           )}
@@ -204,7 +204,7 @@ function Sapbanner() {
               <Sapsupport />
               <Sapblog />
               <Contactsap />
-              <Footercard />
+              {/* <Footercard /> */}
               <Footersap />
             </div>
           )}
@@ -213,7 +213,7 @@ function Sapbanner() {
               <Analysis />
               <Sapblog />
               <Contactsap />
-              <Footercard />
+              {/* <Footercard /> */}
               <Footersap />
             </div>
           )}
@@ -222,7 +222,7 @@ function Sapbanner() {
               <Valueadded />
               <Sapblog />
               <Contactsap />
-              <Footercard />
+              {/* <Footercard /> */}
               <Footersap />
             </div>
           )}

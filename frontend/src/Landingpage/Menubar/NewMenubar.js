@@ -18,7 +18,7 @@ function NewMenubar() {
 
   return (
     <Navbar expand="lg" expanded={expanded} className="navbox">
-      <Container>
+      <Container >
         <Navbar.Brand as={Link} to="/">
           <img src={logo} className="logsiz" alt="KG Genius Labs" />
         </Navbar.Brand>
@@ -32,9 +32,10 @@ function NewMenubar() {
             <NavDropdown title={<span className="navtext1">Our Services</span>} id="services-dropdown">
               {/* ERP Services with nested dropdown */}
             
-
+{/* 
               <div
                 className="dropdown-item navtext1"
+
                 onClick={toggleErpDropdown}
                 style={{ cursor: "pointer" }}
               >
@@ -49,7 +50,10 @@ function NewMenubar() {
                     KG Genius ERP
                   </NavDropdown.Item>
                 </div>
-              )}
+              )} */}
+              <NavDropdown.Item as={Link} to="/custom-erp-software-solution" className="navtext1" onClick={handleSelect}>
+                ERP Services
+              </NavDropdown.Item>
               <NavDropdown.Item as={Link} to="/it-services" className="navtext1" onClick={handleSelect}>
                 IT Services
               </NavDropdown.Item>
@@ -64,9 +68,11 @@ function NewMenubar() {
             <Nav.Link as={Link} to="/blog" className="navtext" onClick={handleSelect}>Blog</Nav.Link>
           </Nav>
 
-          <Nav className="ms-auto">
-            <Nav.Link as={Link} to="/contact" className="contactbutton" onClick={handleSelect}>Contact Us</Nav.Link>
-          </Nav>
+        <Nav className="ms"> <Nav.Link as={Link} to="/contact"className="contactbutton"onClick={handleSelect}>
+    Contact Us
+  </Nav.Link>
+</Nav>
+
         </Navbar.Collapse>
       </Container>
     </Navbar>

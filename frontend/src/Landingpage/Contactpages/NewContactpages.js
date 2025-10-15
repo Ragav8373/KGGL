@@ -206,7 +206,7 @@ function NewContactpages() {
             <div className="form-group">
               <label>Mobile Number</label>
               <div className="input-row">
-                <select
+                {/* <select
                   value={selectedCountryCode}
                   onChange={(e) => setSelectedCountryCode(e.target.value)}
                   required
@@ -216,7 +216,7 @@ function NewContactpages() {
                       {country.name} ({country.code})
                     </option>
                   ))}
-                </select>
+                </select> */}
                 <input
                   type="tel"
                   placeholder="Enter your phone number"

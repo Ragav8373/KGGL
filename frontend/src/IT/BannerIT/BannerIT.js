@@ -152,7 +152,7 @@ function BannerIT() {
               <Techstack />
               <InsightsIT />
               <Contactformit />
-              <Footercard />
+              {/* <Footercard /> */}
               <Itfooter />
             </div>
           )}
@@ -165,7 +165,7 @@ function BannerIT() {
               <Techstack />
               <InsightsIT />
               <Contactformit />
-              <Footercard />
+              {/* <Footercard /> */}
               <Itfooter />
             </div>
           )}
@@ -179,7 +179,7 @@ function BannerIT() {
               <Techstack />
               <InsightsIT />
               <Contactformit />
-              <Footercard />
+              {/* <Footercard /> */}
               <Itfooter />
             </div>
           )}
@@ -191,7 +191,7 @@ function BannerIT() {
               <Techstack />
               <InsightsIT />
               <Contactformit />
-              <Footercard />
+              {/* <Footercard /> */}
               <Itfooter />
             </div>
           )}

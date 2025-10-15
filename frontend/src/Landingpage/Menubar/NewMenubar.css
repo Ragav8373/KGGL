@@ -32,7 +32,12 @@
 
 @media (max-width: 1024px) {
   .navbar .mx-auto {
-    gap: 35px;
+    gap: 27px;
+  }
+}
+@media (max-width: 1140px) {
+  .navbar .mx-auto {
+    gap: 27px;
   }
 }
 
@@ -101,14 +106,52 @@
   pointer-events: none;
   opacity: 0.6;
 }
+/* ================= Contact Button ================= */
+.nav-link.contactbutton {
+  /* Layout and alignment */
+  display: inline-flex !important;       /* allow sizing inside navbar */
+  justify-content: center !important;
+  align-items: center !important;
+  align-self: center !important;         /* vertical align with other nav items */
+  width: 250px !important;
+  height: 60px !important;
+  min-width: 120px !important;           /* prevents collapsing on small screens */
+  box-sizing: border-box !important;
 
-/* Contact button */
-.contactbutton {
-  background-color: #291571 !important;
-  color: #fff !important;
-  font-size: 24px !important;
-  z-index: 1000;
+  /* Shape and gradient border */
+  border-radius: 60px !important;
+  border: 8px solid transparent !important;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(90deg, #3C2EBF 16.82%, #ED1C24 100%) border-box !important;
+
+  /* Typography */
+  color: #1C1559 !important;
+  font-size: 30px !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  -webkit-text-decoration-skip: none !important;
+
+  /* Spacing and behavior */
+  padding: 0 !important;
+  margin: 0 8px !important;              /* small horizontal gap */
+  line-height: normal !important;
+  cursor: pointer !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+  z-index: 1000 !important;
 }
+
+/* Hover effect */
+.nav-link.contactbutton:hover,
+.nav-link.contactbutton:focus {
+  transform: scale(1.05) !important;
+  box-shadow: 0 6px 18px rgba(60,46,191,0.18) !important;
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+
+
 
 /* ================= Nested ERP Dropdown ================= */
 .dropdown-submenu {
@@ -148,5 +191,20 @@
 @media (min-width: 426px) {
   .logsiz {
     margin-left: 10%;
+  }
+}
+/* Small-screen responsive adjustments */
+@media (max-width: 480px) {
+  .nav-link.contactbutton {
+    width: 200px !important;
+    height: 50px !important;
+    font-size: 20px !important;
+    border-radius: 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    align-self: center !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
   }
 }

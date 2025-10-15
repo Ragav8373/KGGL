@@ -175,7 +175,7 @@ function App() {
           />
           <Route
             path="/blog"
-            element={[<Menubar />, <Blogviewed />, <Footercard />, <Footerblog/>]}/>
+            element={[<Menubar />, <Blogviewed />, <Footerblog/>]}/>
           <Route
             path="/implementation"
             element={[
@@ -189,7 +189,7 @@ function App() {
           />
           <Route
             path="/contact"
-            element={[<Menubar />, <Contactpage />, <Footercard />, <Contactfooter/>]}
+            element={[<Menubar />, <Contactpage />, <Contactfooter/>]}
           />
           <Route
             path="/sap-services"
@@ -208,18 +208,18 @@ function App() {
               <Adoptdm />,
               <Dmblog />,
               <Dmcontact />,
-              <Footercard />,
+              // <Footercard />,
               <Footerdm />,
               <Autopopup />
             ]}
           />
-          <Route path="/digital-marketing-blog/:id" element={[<Menubar />,<Dmblogview />,<Footercard />,<Footerblog/>]} />
-          <Route path="/sap-blog/:id" element={[<Menubar />,<Sapblogview />,<Footercard />,<Footerblog/>]} />
+          <Route path="/digital-marketing-blog/:id" element={[<Menubar />,<Dmblogview />,,<Footerblog/>]} />
+          <Route path="/sap-blog/:id" element={[<Menubar />,<Sapblogview />,<Footerblog/>]} />
           <Route
             path="/it-blog/:id"
-            element={[<Menubar />, <Blogit />, <Footercard />, <Footerblog/>]}
+            element={[<Menubar />, <Blogit />, <Footerblog/>]}
           />
-          <Route path="/erp-blog/:id" element={[<Menubar />, <Erpblogview/>, <Footercard />, <Footerblog/>]}/>
+          <Route path="/erp-blog/:id" element={[<Menubar />, <Erpblogview/>, <Footerblog/>]}/>
           <Route
             path="/crm"
             element={[
@@ -228,7 +228,7 @@ function App() {
               <Crmdemobook />,
               <Techstack />,
               <Contactformit />,
-              <Footercard />,
+              // <Footercard />,
               <Itfooter />
             ]}
           />
@@ -239,7 +239,7 @@ function App() {
               <Demobook />,
               <Techstack />,
               <Contactformit />,
-              <Footercard />,
+              // <Footercard />,
               <Itfooter />
             ]}/>
           <Route path="/genius-login" element={<Loginpage />} />
@@ -248,9 +248,9 @@ function App() {
           <Route path="/blogeditor/:id" element={<EditorBlog/>}/>
           <Route path="/updateblog/:id/:userid" element={<Blogupdation/>}/>
           <Route path="*" element={<Errorpage />} />
-          <Route path="/event" element={[<Webinarbanner/>,<Webinarpart/>,<Webinarcontact/>,<Footercard />,<Webinarfooter/>]}/>
+          <Route path="/event" element={[<Webinarbanner/>,<Webinarpart/>,<Webinarcontact/>,<Webinarfooter/>]}/>
           <Route path="/sales/:userid" element={[<Salesmenu/>,<Salesdatacategory/>]}/>
-          <Route path="/custom-erp-software-solution" element={[<Erpmenubar/>,<Erpbanner/>,<Erprequirements/>,<Verticals/>,<Erppro/>,<Featureserp/>,<Additionalfeatures/>,<Benefitsoferp/>,<Businesserp/>,<ERPInsights/>,<Erpcontact/>,<Footercard />,<Erpfooter/>,<Autopopup/>]}/>
+          <Route path="/custom-erp-software-solution" element={[<Erpmenubar/>,<Erpbanner/>,<Erprequirements/>,<Verticals/>,<Erppro/>,<Featureserp/>,<Additionalfeatures/>,<Benefitsoferp/>,<Businesserp/>,<ERPInsights/>,<Erpcontact/>,,<Erpfooter/>,<Autopopup/>]}/>
           <Route path="/erp" element={<RedirectToExternal/>}/>
           <Route path="/digital-marketing-services-coimbatore" element={[
               <DMLandingMenubar/>,
@@ -263,7 +263,7 @@ function App() {
               <Whydm/>,
               <Dmblog />,
               <DMLandingcontact/>,
-              <Footercard />,
+              // <Footercard />,
               <DMLFoot/>,
             ]}/>
             <Route path="/DigitalMarketing-leadspage/:userid" element={[<DMLeads/>]}/>
