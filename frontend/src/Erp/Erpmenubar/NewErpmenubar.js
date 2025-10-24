@@ -5,10 +5,11 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from 'react-router-dom';
 import logo from "../../Asset/Logo Tagline-02 (1).png";
-import "./NewMenubar.css";
+import "./NewErpmenubar.css";
 import NewCareer from '../../Career/NewCareer';
+import { Link as ScrollLink } from "react-scroll";
 
-function NewMenubar() {
+function NewErpmenubar() {
   const [expanded, setExpanded] = useState(false); 
   const [erpDropdownOpen, setErpDropdownOpen] = useState(false);
 
@@ -68,10 +69,23 @@ function NewMenubar() {
             <Nav.Link as={Link} to="/blog" className="navtext" onClick={handleSelect}>Blog</Nav.Link>
           </Nav>
 
-        <Nav className="ms"> <Nav.Link as={Link} to="/contact"className="contactbutton"onClick={handleSelect}>
+        {/* <Nav className="ms"> 
+            <Nav.Link as={Link} to="Erpcontact"className="contactbutton"onClick={handleSelect}>
     Contact Us
   </Nav.Link>
-</Nav>
+</Nav> */}
+  <Nav className='ms'>
+            {/* Using ScrollLink from react-scroll for smooth scrolling */}
+              <ScrollLink
+                to="ERPcontact"  // ID of the contact section
+                smooth={true}
+                duration={500}
+                className='contactbutton'
+                onClick={() => setExpanded(false)} // Close navbar when clicking link
+              >
+                Contact Us
+              </ScrollLink>
+          </Nav>
 
         </Navbar.Collapse>
       </Container>
@@ -79,4 +93,4 @@ function NewMenubar() {
   );
 }
 
-export default NewMenubar;
+export default NewErpmenubar;

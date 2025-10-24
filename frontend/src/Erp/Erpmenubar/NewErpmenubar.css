@@ -1,0 +1,210 @@
+/* ================= Logo ================= */
+.logsiz {
+  height: 6%;
+  width: 90px;
+}
+
+/* ================= Navbar Base ================= */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(5px);
+  color: #1C1559;
+  font-family: 'Proxima Nova', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  z-index: 2500; /* Above all content */
+  position: sticky; /* Sticky on top */
+  top: 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+/* ================= Navbar Links Spacing ================= */
+.navbar .mx-auto {
+  display: flex;
+  gap: 50px; /* Space between Home, About Us, Our Services, Blog */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1024px) {
+  .navbar .mx-auto {
+    gap: 27px;
+  }
+}
+@media (max-width: 1140px) {
+  .navbar .mx-auto {
+    gap: 27px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar .mx-auto {
+    gap: 20px;
+    flex-direction: column;
+  }
+}
+
+/* ================= Nav Links ================= */
+.navtext {
+  color: #291571 !important;
+  font-size: 20px !important;
+  font-family: 'Proxima Nova', sans-serif !important;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  padding-bottom: 5px;
+  z-index: 1;
+}
+
+.navtext:hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background-image: linear-gradient(to right,#D10D14,#6B060A);
+  transform: scaleX(0.8);
+  transition: transform 0.3s ease;
+}
+
+.navtext::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 3px;
+  background-image: linear-gradient(to right,#D10D14,#6B060A);
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+/* ================= Dropdown Items ================= */
+.navtext1 {
+  color: #291571 !important;
+  font-size: 20px !important;
+  font-family: 'Proxima Nova', sans-serif !important;
+  position: relative;
+  overflow: hidden;
+  z-index: 1500; /* Higher for dropdown items */
+}
+
+.navtext1:hover,
+.navtext1:active {
+  background-color: white !important;
+}
+
+.navtext1:disabled {
+  color: #6c757d;
+  pointer-events: none;
+  opacity: 0.6;
+}
+/* ================= Contact Button ================= */
+.contactbutton {
+  /* Layout and alignment */
+  display: inline-flex !important;       /* allow sizing inside navbar */
+  justify-content: center !important;
+  align-items: center !important;
+  align-self: center !important;         /* vertical align with other nav items */
+  width: 250px !important;
+  height: 60px !important;
+  min-width: 120px !important;           /* prevents collapsing on small screens */
+  box-sizing: border-box !important;
+
+  /* Shape and gradient border */
+  border-radius: 60px !important;
+  border: 8px solid transparent !important;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(90deg, #3C2EBF 16.82%, #ED1C24 100%) border-box !important;
+
+  /* Typography */
+  color: #1C1559 !important;
+  font-size: 30px !important;
+  font-weight: 600 !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  -webkit-text-decoration-skip: none !important;
+
+  /* Spacing and behavior */
+  padding: 0 !important;
+  margin: 0 8px !important;              /* small horizontal gap */
+  line-height: normal !important;
+  cursor: pointer !important;
+  transition: transform 0.25s ease, box-shadow 0.25s ease !important;
+  z-index: 1000 !important;
+}
+
+/* Hover effect */
+.nav-link.contactbutton:hover,
+.nav-link.contactbutton:focus {
+  transform: scale(1.05) !important;
+  box-shadow: 0 6px 18px rgba(60,46,191,0.18) !important;
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+
+
+
+/* ================= Nested ERP Dropdown ================= */
+.dropdown-submenu {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background-color: #f8f7fc;
+  border-radius: 8px;
+  border-left: 3px solid #5C4FDA;
+  min-width: 200px;
+  z-index: 2000; /* Top-most for nested ERP dropdown */
+}
+
+/* Top-level dropdown */
+.navbar .dropdown-menu {
+  z-index: 1800;
+}
+
+/* Mobile adjustments */
+@media (max-width: 992px) {
+  .dropdown-submenu {
+    position: static;
+    width: 100%;
+    margin: 5px 0;
+    border-left: none;
+  }
+}
+
+@media (max-width: 769px) {
+  .logsiz {
+    width: 70px !important;
+    height: 60px;
+    margin-left: 5% !important;
+  }
+}
+
+@media (min-width: 426px) {
+  .logsiz {
+    margin-left: 10%;
+  }
+}
+/* Small-screen responsive adjustments */
+@media (max-width: 480px) {
+  .contactbutton {
+    width: 200px !important;
+    height: 50px !important;
+    font-size: 20px !important;
+    border-radius: 40px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    align-self: center !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}

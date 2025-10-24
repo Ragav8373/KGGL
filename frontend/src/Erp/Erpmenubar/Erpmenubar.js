@@ -75,15 +75,15 @@ function Erpmenubar() {
           </Nav>
           <Nav className='ms-auto'>
             {/* Using ScrollLink from react-scroll for smooth scrolling */}
-            <ScrollLink
-              to="ERPcontact"  // ID of the contact section
-              smooth={true}
-              duration={500}
-              className='contactbutton px-3 py-2 rounded-1 text-decoration-none'
-              onClick={() => setExpanded(false)} // Close navbar when clicking link
-            >
-              Contact Us
-            </ScrollLink>
+              <ScrollLink
+                to="ERPcontact"  // ID of the contact section
+                smooth={true}
+                duration={500}
+                className='contactbutton px-3 py-2 rounded-1 text-decoration-none'
+                onClick={() => setExpanded(false)} // Close navbar when clicking link
+              >
+                Contact Us
+              </ScrollLink>
           </Nav>
         </Navbar.Collapse>
       </Container>

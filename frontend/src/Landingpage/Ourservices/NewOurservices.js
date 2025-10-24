@@ -7,7 +7,11 @@ import { useNavigate } from "react-router-dom";
 
 function NewOurservices() {
   const navigate = useNavigate();
-  const handleNav = () => navigate("/aboutus");
+  const handleNav = () => navigate("/custom-erp-software-solution");
+  const handleNav2 = () => navigate("/it-services");
+  const handleNav3 = () => navigate("/digital-marketing-services-coimbatore");
+
+
 
   return (
     <section className="services" id="services">
@@ -52,7 +56,7 @@ function NewOurservices() {
               We deliver end-to-end <strong>IT services,</strong> including Website Design, Mobile App Development, and Custom Software Solutions. 
               Our tech-driven approach ensures <strong>scalable, secure, and user-friendly applications</strong> tailored to your business needs.
             </p>
-            <button type="button" onClick={handleNav} className="btn3">
+            <button type="button" onClick={handleNav2} className="btn3">
               View More
             </button>
           </div>
@@ -73,7 +77,7 @@ function NewOurservices() {
               From <strong>SEO, SEM,</strong> and <strong>PPC</strong> to <strong>Social Media, Content,</strong> and <strong>Video Marketing,</strong> we create campaigns that generate 
               <strong> traffic, leads,</strong> and <strong>conversions.</strong> Our creative + data-driven strategies ensure your brand stands out online.
             </p>
-            <button type="button" onClick={handleNav} className="btn4">
+            <button type="button" onClick={handleNav3} className="btn4">
               View More
             </button>
           </div>
