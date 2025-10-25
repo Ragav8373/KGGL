@@ -1,0 +1,89 @@
+.card-title {
+  font-weight: 700;
+  font-size: 20px;
+  padding: 0.5rem 1rem;
+  color: #f8f9fa !important;
+  margin-bottom: 1rem;
+  background: linear-gradient(90deg, #1C1559 0%, #3C2EBF 26%, #ED1C24 100%) border-box;
+  transition: background-position 0.5s ease;
+  overflow: visible;
+}
+.card-title.l{
+   border-radius: 50px 0 0 50px;
+}
+.card-title.r{
+  border-radius: 0 50px 50px 0;
+  background: linear-gradient(90deg, #ED1C24 0%, #3C2EBF 60%, #1C1559 100%) border-box;
+  transition: background-position 0.5s ease;
+}
+
+.card-title.left {
+  width: 60%;
+  margin-left: auto;
+  margin-bottom: 1rem;
+
+  display: flex; 
+  justify-content: flex-end;
+  border-radius: 50px 0 0 50px;
+  
+}
+.card-title.right {
+  width:60%; 
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 0 50px 50px 0;
+  background: linear-gradient(90deg, #ED1C24 0%, #3C2EBF 60%, #1C1559 100%) border-box;
+  transition: background-position 0.5s ease;
+}
+.card-title.left1 {
+  width: 80%;
+  margin-left: auto;
+  margin-bottom: 1rem;
+  display: flex; 
+  justify-content: flex-end;
+  border-radius: 50px 0 0 50px;
+  
+}
+.card-title.right1 {
+  width:80%; 
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 0 50px 50px 0;
+  background: linear-gradient(90deg, #ED1C24 0%, #3C2EBF 60%, #1C1559 100%) border-box;
+  transition: background-position 0.5s ease;
+}
+
+
+
+/* Card Text */
+.card-text {
+  color: #1b1b4c;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+
+/* Side Titles - Removed gradient, now plain text */
+.side-title {
+  align-items: center;  
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 0.3rem;
+   background: linear-gradient(90deg, #1C1559 15.39%, #3C2EBF 42.31%, #ED1C24 80.76%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Side Subtitle */
+.side-subtitle {
+  font-size: 0.9rem;
+  color: #6c6c9d;
+  margin-top: 0.3rem;
+
+  align-items: center;
+}
+
+
