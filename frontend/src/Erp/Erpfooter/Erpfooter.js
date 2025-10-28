@@ -28,10 +28,10 @@ const year = date.getFullYear();
           <h4>Services</h4>
            <Sclink to="Geniuserpbanner" className="nav-link"><p>KG Genius ERP</p></Sclink>
                     
-          <Link to="/sap-services" className="nav-link"><p>SAP Services</p></Link>
+          {/* <Link to="/sap-services" className="nav-link"><p>SAP Services</p></Link> */}
           <Link to="/it-services" className="nav-link"><p>IT Services</p></Link>
           <Link to="/digital-marketing-services-coimbatore" className="nav-link"><p> Digital Marketing Services</p></Link>
-          <Link to="/hr-consultancy" className="nav-link"><p>HR Consultancy</p></Link>
+          {/* <Link to="/hr-consultancy" className="nav-link"><p>HR Consultancy</p></Link> */}
           <hr className="d-sm-block d-lg-none custom-hr" />
         </div>
         <div className='col-sm-4 col-lg-2'>
@@ -62,11 +62,11 @@ const year = date.getFullYear();
 </div>
 
         <div className='col-sm-4 col-lg-3'>
-          <p>A Division of</p>
-          <a href="https://www.kgisl.com/"><img src={kgisllogo} title='KGiSL' alt="KGISL Logo" className="kgisllogo" height={50} width={150} /></a> 
+          {/* <p>A Division of</p>
+          <a href="https://www.kgisl.com/"><img src={kgisllogo} title='KGiSL' alt="KGISL Logo" className="kgisllogo" height={50} width={150} /></a>  */}
           <div className='d-flex flex-column justify-content-center'>
           <div>
-          <p className='mt-3'>Follow us on</p>                                                                                    
+          <p className='mt-5'>Follow us on</p>                                                                                    
           </div>
           <div className='pb-4'>
           <a href="https://www.facebook.com/profile.php?id=61557350633724"><FontAwesomeIcon icon={faFacebook} className="text-white mx-2"></FontAwesomeIcon></a>

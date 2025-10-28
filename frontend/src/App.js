@@ -89,7 +89,9 @@ import Softwarepart from "./Erp/Softwarepart/Softwarepart";
 import Businesserp from "./Erp/Businesserp/Businesserp";
 // import Erppro from "./Erp/Erppro/Erppro";
 import NewErppro from "./Erp/Erppro/NewErppro";  //new
-import Featureserp from "./Erp/Featureserp/Featureserp";
+import IntegratedFeatures from "./Erp/IntegratedFeatures/IntegratedFeatures";  //new
+// import Featureserp from "./Erp/Featureserp/Featureserp";
+import NewFeatureserp from "./Erp/Featureserp/NewFeatureserp";   //new
 import Additionalfeatures from "./Erp/Additionalfeatures/Additionalfeatures";
 import Benefitsoferp from "./Erp/Benefitsoferp/Benefitsoferp";
 import Erpblock from "./Erp/Erpblock/Erpblock";
@@ -253,7 +255,7 @@ function App() {
           <Route path="*" element={<Errorpage />} />
           <Route path="/event" element={[<Webinarbanner/>,<Webinarpart/>,<Webinarcontact/>,<Webinarfooter/>]}/>
           <Route path="/sales/:userid" element={[<Salesmenu/>,<Salesdatacategory/>]}/>
-          <Route path="/custom-erp-software-solution" element={[<NewErpmenubar/>,<NewErpbanner/>,<Erprequirements/>,<Verticals/>,<NewErppro/>,<Featureserp/>,<Additionalfeatures/>,<Benefitsoferp/>,<Businesserp/>,<ERPInsights/>,<Erpcontact/>,,<Erpfooter/>,<Autopopup/>]}/>
+          <Route path="/custom-erp-software-solution" element={[<NewErpmenubar/>,<NewErpbanner/>,<Erprequirements/>,<Verticals/>,<NewErppro/>,<IntegratedFeatures/>,<NewFeatureserp/>,<Additionalfeatures/>,<Benefitsoferp/>,<Businesserp/>,<ERPInsights/>,<Erpcontact/>,,<Erpfooter/>,<Autopopup/>]}/>
           <Route path="/erp" element={<RedirectToExternal/>}/>
           <Route path="/digital-marketing-services-coimbatore" element={[
               <DMLandingMenubar/>,

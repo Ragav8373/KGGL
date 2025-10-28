@@ -25,7 +25,7 @@ function NewOurservices() {
           <div className="col-md-5 text-center mb-4 mb-md-0">
             <div className="image-wrapper">
               {/* <div className="section-border"></div> */}
-              <img src={erpImage} alt="ERP Service" className="img-fluid rounded" />
+              <img src={erpImage} alt="ERP Service" className="img-fluid rounded box" />
             </div>
           </div>
           <div className="col-md-7">
@@ -46,7 +46,7 @@ function NewOurservices() {
           <div className="col-md-5 text-center mb-4 mb-md-0">
             <div className="image-wrapper">
               {/* <div className="section-border-1"></div> */}
-              <img src={itImage} alt="IT Service" className="img-fluid rounded" />
+              <img src={itImage} alt="IT Service" className="img-fluid rounded box" />
             </div>
           </div>
           <div className="col-md-7 text-md-end">
@@ -67,7 +67,7 @@ function NewOurservices() {
           <div className="col-md-5 text-center mb-4 mb-md-0">
             <div className="image-wrapper">
               {/* <div className="section-border"></div> */}
-              <img src={dgImage} alt="Digital Marketing" className="img-fluid rounded" />
+              <img src={dgImage} alt="Digital Marketing" className="img-fluid rounded box" />
             </div>
           </div>
           <div className="col-md-7">

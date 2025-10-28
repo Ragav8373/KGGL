@@ -1,0 +1,70 @@
+.featurespart {
+  background: linear-gradient(90deg, #1C1559 0%, #3C2EBF 50%, #FF0000 100%);
+  padding: 40px 0;
+}
+.featurespart .card{
+  border: none;
+  border-radius: 10px;
+  margin: 5px;
+  height: 200px;
+  color: #ffffff;
+background: linear-gradient(90deg, rgba(28, 21, 89, 0.6) 0%, rgba(60, 46, 191, 0.6) 100%);
+backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+  
+}
+.features-scroll-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 20px 0;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+.featurespart h4{
+  font-size: 20px !important;
+  font-weight: 600 !important;
+}
+
+.featurespart .revolutiontxt {
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+/* Horizontal Scroll Styles */
+.features-scroll-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 20px 0;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; 
+  -ms-overflow-style: none; 
+}
+
+.features-scroll-container::-webkit-scrollbar {
+  display: none;
+}
+
+.features-scroll-wrapper {
+  display: flex;
+  gap: 15px;
+  padding: 0 15px;
+}
+
+.feature-item {
+  flex: 0 0 280px; 
+  min-width: 280px;
+}
+
+.feature-item-wide {
+  flex: 0 0 560px; 
+  min-width: 560px;
+}
+
+@media (min-height:426px) and (max-height:769px){
+  .featurespart .card{
+    height: 250px !important;
+    font-size: 20px;
+  } 
+}
