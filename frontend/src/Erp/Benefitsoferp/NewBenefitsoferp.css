@@ -1,0 +1,104 @@
+/* Gradient title */
+.Benefitsoferp {
+  align-items: center;
+  font-weight: 700;
+  font-size: 2.25rem;
+  margin-bottom: 0.3rem;
+  background: linear-gradient(90deg, #1C1559 15.39%, #3C2EBF 42.31%, #ED1C24 80.76%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Row layout to align cards evenly */
+.Row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Card Design */
+.Benefitsoferpcard {
+  position: relative;
+  width: 332px;             
+  height: 200px;            
+  background: #fff;
+  border-radius: 1.8rem;
+  padding: 1.5rem;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  z-index: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+/* Gradient border */
+.Benefitsoferpcard::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 4px;
+  border-radius: 1.8rem;
+  background: linear-gradient(90deg, #ff0040, #3c2ebf);
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+}
+
+/* Heading */
+.Benefitsoferpcard h4 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.8rem;
+  background: linear-gradient(90deg, #ff0040, #3c2ebf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Paragraph */
+.revolutiontxt {
+  font-size: 1rem;
+  color: #1c1559;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+  text-align: start;
+}
+
+@media (max-width: 1024px) {
+  .Benefitsoferpcard {
+    width: 300px;
+    height: 200px;
+  }
+
+  .Benefitsoferp {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .Benefitsoferpcard {
+    width: 100%;
+    height: 220px; 
+  }
+
+  .Benefitsoferp {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Benefitsoferpcard {
+    height: 230px;
+  }
+
+  .Benefitsoferp {
+    font-size: 1.5rem;
+  }
+}

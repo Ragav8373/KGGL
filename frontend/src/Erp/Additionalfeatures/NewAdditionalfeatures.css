@@ -1,0 +1,78 @@
+/* Container */
+.additional-features-container {
+  width: 100%;
+  padding: 3rem 1rem;
+  background: #fff;
+  overflow: hidden;
+}
+
+.section-title1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-align: center;
+  color: #160b46 !important;
+  margin-bottom: 3rem;
+}
+
+/* Marquee Wrapper */
+.marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee-inner {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
+  animation: scrollLeft 80s linear infinite;
+}
+
+/* Cards */
+.feature-card {
+  min-width: 280px;
+  height: 160px;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.125rem;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark-card {
+  background-color: #1c1559;
+  color: #fff;
+}
+
+.light-card {
+  background-color: #ffffff;
+  color: #1c1559;
+  border: 2px solid #1c1559;
+}
+
+/* Animation */
+@keyframes scrollLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .feature-card {
+    min-width: 220px;
+    height: 120px;
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.75rem;
+  }
+}
