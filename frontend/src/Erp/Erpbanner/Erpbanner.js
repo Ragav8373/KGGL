@@ -1,5 +1,5 @@
 import React from 'react';
-import './Erpbanner.css';
+// import './Erpbanner.css';
 import bannerlogo from '../Asset/geniuserplogo.png';
 import smlogoerp from "../Asset/bluelogo.png";
 import { Link as ScrollLink } from 'react-scroll'; 

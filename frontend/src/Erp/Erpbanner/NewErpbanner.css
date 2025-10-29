@@ -1,21 +1,12 @@
 .businessheading{
     font-weight: 600;
-    color: #291571;
     font-size: 55px;
 }
-/* .bookbtn{
-    background-color: #ED1C24;
-    border-radius: 25px;
-    font-weight: 600;
-    font-size: 20px;
-    cursor: pointer;
-    
-} */
 .bookbtn {
   display: block;
   width: 250px;
   height: 60px;
-  line-height: 44px; /* centers text vertically inside button */
+  line-height: 44px; 
   text-align: center;
   text-decoration: none;
   font-size: 20px;
@@ -28,13 +19,9 @@
     linear-gradient(white, white) padding-box,
     linear-gradient(90deg, #3C2EBF 16.82%, #ED1C24 100%) border-box;
   transition: transform 0.3s ease;
+  opacity: 0.9;
   
 }
-
-/* .bookbtn:hover {
-  transform: scale(1.05);
-  color: #ED1C24;
-} */
 
 .streamtxt{
     color: #291571;
@@ -60,7 +47,7 @@
   padding: 2rem;
   overflow: hidden;
   z-index: 0;
-  background: transparent; /* No background */
+  background: transparent;
 }
 
 /* Glowing animated gradient border only */
@@ -69,12 +56,12 @@
   position: absolute;
   inset: 0;
   border-radius: 50px;
-  padding: 7px; /* Border thickness */
+  padding: 7px; 
   background: linear-gradient(
     90deg,
-    #5C4FDA 31.73%,
-    #ED1C24 59.62%,
-    #312A74 91.35%
+    #FFFFFF 6%,
+    #3C2EBF 83%,
+    #ED1C24 100%
   );
   background-size: 300% 300%;
   animation: glowPulse 3s ease-in-out infinite alternate,
@@ -109,22 +96,33 @@
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
-
-.lapbackround {
-  background-color: #291571 !important;
-  position: relative; 
-  z-index: 5 !important;
+  
+.lapbanner {
+  background-image: url("../Asset/Mask group.png");
+  background-size: cover;
+  /* background-position: center; */
+  position: relative;
+  height: 100% !important;
+  z-index: 0;
 }
 
-.lapbanner{
-    background-image: url("../Asset/Mask\ group.png");
-    background-size: cover;
-    height: 100vh !important;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    padding-left: 50px; 
+.lapbanner::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #1C1559;
+  opacity: 0.6;
+  z-index: 1;
 }
+
+.lapbanner > * {
+  position: relative;
+  z-index: 2; 
+}
+
 .imglogo{
     height: 110px;
 }
