@@ -13,14 +13,14 @@ font-weight: 500;
   .businessverticalscard {
     /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 4px 0px 8px rgba(0, 0, 0, 0.1); */
     padding: 30px;
-
     border-radius: 8px;
     background-color: #fff;  
   }
-  .erpheading1{
+  .erpheading11{
 font-size: 32px;
 color: #291571;
 font-weight: 600;
+margin-bottom: 0rem;
   }
 
   

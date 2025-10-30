@@ -19,12 +19,16 @@
   justify-content: center;
 }
 
-.feature-item {
+.feature-items {
   display: flex;
   align-items: center;
   gap: 15px;
+  height: 150px;
 }
-
+/* .feature-items {
+  flex: 0 0 120px; 
+  min-width: 320px;
+} */
 .vertical-line {
   width: 8px;
   height: 60px;
@@ -97,7 +101,7 @@
   .gradient-bar {
     font-size: 22px;
   }
-  .feature-item.middle{
+  .feature-items.middle{
     margin-inline-start: 0% !important;
   }
 
@@ -166,7 +170,7 @@
     border-radius: 0 20px 20px 0;
   }
 
-  .feature-item {
+  .feature-items {
     gap: 6px;
   }
 

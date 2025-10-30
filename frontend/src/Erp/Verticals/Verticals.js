@@ -83,7 +83,7 @@ function Verticals() {
   return (
   <>
     <div className="container">
-      <h1 className="text-center erpheading1 py-5">Our Business Verticals</h1>
+      <h1 className="text-center erpheading11 py-5">Our Business Verticals</h1>
       <div className="verticalspart">
       <div className="businessverticalscard p-5 rounded-5 ">
         <div className="d-flex flex-column justify-content-center align-items-center">

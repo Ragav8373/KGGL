@@ -19,19 +19,19 @@ function IntegratedFeatures() {
       <Row className="align-items-center justify-content-center">
         {/* Left Column - Feature List */}
         <Col lg={4} md={6} className="feature-text-col ">
-          <div className="feature-item ">
+          <div className="feature-items ">
             <div className="vertical-line"></div>
             <h5 className="feature-text">
               Centralized Dashboard for All Modules
             </h5>
           </div>
 
-          <div className="feature-item middle ms-5 ">
+          <div className="feature-items middle ms-5 ">
             <div className="vertical-line"></div>
             <h5 className="feature-text">Social Media Integration</h5>
           </div>
 
-          <div className="feature-item">
+          <div className="feature-items">
             <div className="vertical-line"></div>
             <h5 className="feature-text">
               Notifications & Alerts via Email & WhatsApp
