@@ -1,6 +1,26 @@
-.businesspart{
+/* .businesspart{
     color: #291571;
 }
 .bannerimg{
     height: 300px;
+} */
+
+.erpbusinesheading{
+font-size: 32px;
+font-weight: 700;
+margin-bottom: 0rem;
+background: linear-gradient(90deg, #1C1559 15.39%, #3C2EBF 42.31%, #ED1C24 80.76%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
+.busines{
+   color: #291571; 
+   font-size: 20px;
+   /* font-weight: 700; */
+}
+/* .bold{
+   color: #291571;  
+   font-size: 20px;
+   font-weight: 700;
+} */
