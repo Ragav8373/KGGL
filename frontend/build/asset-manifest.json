@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.495a5529.css",
-    "main.js": "/static/js/main.d8c48a61.js",
+    "main.css": "/static/css/main.63166d16.css",
+    "main.js": "/static/js/main.64fb253e.js",
     "static/js/453.c6b2d817.chunk.js": "/static/js/453.c6b2d817.chunk.js",
     "static/media/testimonial-2.mp4": "/static/media/testimonial-2.5c039b8c951b55a6bce4.mp4",
     "static/media/working-with-blueprint.jpg": "/static/media/working-with-blueprint.64ee90685d64d5ff885b.jpg",
@@ -16,7 +16,7 @@
     "static/media/Build.png": "/static/media/Build.537dc8d24919d0bf6273.png",
     "static/media/hrbannerim.png": "/static/media/hrbannerim.90ef6519338dfe4a2a0d.png",
     "static/media/Sectors.png": "/static/media/Sectors.8a2fa00a45cd207cc68c.png",
-    "static/media/bannerpart.png": "/static/media/bannerpart.f68f2ea2f8bc7cbfa090.png",
+    "static/media/Mask group.png": "/static/media/Mask group.c50929d75b7b4a75060e.png",
     "static/media/l4.png": "/static/media/l4.be2426c61b2b3e38e418.png",
     "static/media/Background.png": "/static/media/Background.9c47922f7a265d959344.png",
     "static/media/bannerdm.png": "/static/media/bannerdm.025d7d89a243175e6a0f.png",
@@ -46,7 +46,6 @@
     "static/media/groupphoto.png": "/static/media/groupphoto.aa86c34bfceecbf9f1ab.png",
     "static/media/resilientlap.png": "/static/media/resilientlap.f2b841333b3e5846635d.png",
     "static/media/passionate.png": "/static/media/passionate.8e18e14a106280f9a184.png",
-    "static/media/geniuserp.png": "/static/media/geniuserp.6e7326bb0c9c97a87ba5.png",
     "static/media/2964669-01 1.jpg": "/static/media/2964669-01 1.67b5ec9ce70ce22c64fa.jpg",
     "static/media/l2.png": "/static/media/l2.53c89741327e3c640989.png",
     "static/media/Transparentlap.png": "/static/media/Transparentlap.751f6df0682a0a3eaddd.png",
@@ -59,6 +58,7 @@
     "static/media/collabrative.png": "/static/media/collabrative.afd23a65f457d5867099.png",
     "static/media/Lmszenbook.png": "/static/media/Lmszenbook.5727030d1e4333babcf6.png",
     "static/media/lapcore8.png": "/static/media/lapcore8.b4cc07303c0e97edee1f.png",
+    "static/media/kgilsiim.png": "/static/media/kgilsiim.043af028b02a7f24b35a.png",
     "static/media/mv.png": "/static/media/mv.6f8e78191c42445c8bcc.png",
     "static/media/l8.png": "/static/media/l8.4357a1f1c154d11e127e.png",
     "static/media/ser3.png": "/static/media/ser3.9cc8913788eee3194cf1.png",
@@ -81,8 +81,10 @@
     "static/media/ITBanner.jpg": "/static/media/ITBanner.ec88282b179e30222da3.jpg",
     "static/media/Zenbook.png": "/static/media/Zenbook.871b37adb92961b6a79f.png",
     "static/media/GLBanner.jpg": "/static/media/GLBanner.19d8065ee7faceed9dfd.jpg",
+    "static/media/kgisliim2.png": "/static/media/kgisliim2.a54777465de1fe19b47a.png",
     "static/media/DMBanner.jpg": "/static/media/DMBanner.7474cc5e0000e40c6e7d.jpg",
     "static/media/oopstext.jpg": "/static/media/oopstext.b9315b992d383733dae9.jpg",
+    "static/media/kgisliim1.png": "/static/media/kgisliim1.e181ef32d68564f69399.png",
     "static/media/discuss.png": "/static/media/discuss.901e7ca997afcd9d3716.png",
     "static/media/SAPBanner.jpg": "/static/media/SAPBanner.e0a79c60d126baac1296.jpg",
     "static/media/seoi.jpeg": "/static/media/seoi.27e52834dcb484670fee.jpeg",
@@ -117,12 +119,12 @@
     "static/media/SAP-SuccessFactors-Logo 1.png": "/static/media/SAP-SuccessFactors-Logo 1.d7417a897149388f26ae.png",
     "static/media/rubyimage.png": "/static/media/rubyimage.c002d02bdb350ef07359.png",
     "index.html": "/index.html",
-    "main.495a5529.css.map": "/static/css/main.495a5529.css.map",
-    "main.d8c48a61.js.map": "/static/js/main.d8c48a61.js.map",
+    "main.63166d16.css.map": "/static/css/main.63166d16.css.map",
+    "main.64fb253e.js.map": "/static/js/main.64fb253e.js.map",
     "453.c6b2d817.chunk.js.map": "/static/js/453.c6b2d817.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.495a5529.css",
-    "static/js/main.d8c48a61.js"
+    "static/css/main.63166d16.css",
+    "static/js/main.64fb253e.js"
   ]
 }
