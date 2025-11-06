@@ -12,6 +12,8 @@ import Footer from "./Landingpage/Footer/Footer";
 import Footercard from "./Landingpage/Footercard/Footercard";
 import NewFootercard from "./Landingpage/Footercard/NewFootercard"; //new
 import AboutKggl from "./Aboutsection/AboutKggl/AboutKggl";
+import NewAboutBanner from "./Aboutsection/AboutBanner/NewAboutBanner";  //new
+
 import Mission from "./Aboutsection/Mission/Mission";
 import Banner from "./Landingpage/Banner/Banner";
 import NewBanner from "./Landingpage/Banner/NewBanner";   //new
@@ -157,6 +159,7 @@ function App() {
             element={[
               // <Menubar />,
               <NewMenubar/>,
+              <NewAboutBanner/>,
               <AboutKggl />,
               <Evolution />,
               <Mission />,

@@ -1,0 +1,186 @@
+/* NewAboutBanner.css */
+.businessheading1 {
+    font-weight: 600;
+    font-size: 55px;
+    color: white;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+.lapborder1 {
+    position: relative;
+    /* border-radius: 50px; */
+    padding: 2rem;
+    overflow: hidden;
+    z-index: 0;
+    background: transparent;
+}
+
+/* Glowing animated gradient border only */
+.lapborder1::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    /* border-radius: 50px; */
+    padding: 7px;
+    background: linear-gradient(
+        90deg,
+        #FFFFFF 6%,
+        #3C2EBF 83%,
+        #ED1C24 100%
+    );
+    background-size: 300% 300%;
+    animation: glowPulse 3s ease-in-out infinite alternate,
+               gradientShift 10s ease-in-out infinite;
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: 1;
+    pointer-events: none;
+}
+
+/* Glowing pulse animation */
+@keyframes glowPulse {
+    0% {
+        box-shadow: 0 0 30px rgba(92, 79, 218, 0.4),
+                    0 0 40px rgba(237, 28, 36, 0.3),
+                    0 0 35px rgba(49, 42, 116, 0.4);
+    }
+    100% {
+        box-shadow: 0 0 70px rgba(92, 79, 218, 0.8),
+                    0 0 100px rgba(237, 28, 36, 0.7),
+                    0 0 80px rgba(49, 42, 116, 0.8);
+    }
+}
+
+/* Gradient movement animation */
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.lapbanner1 {
+    background-image: url("../Asset/Mask\ group1.png");
+    background-size: cover;
+    position: relative;
+    height: 100% !important;
+    z-index: 0;
+    padding: 2rem 0;
+}
+
+.lapbanner1::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: #1C1559;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.lapbanner1 > * {
+    position: relative;
+    z-index: 2;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem;
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 3rem;
+}
+
+.text-content h1 {
+    color: white;
+}
+
+.text-content p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.logo-container {
+    flex-shrink: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imglogob {
+    width: 100%;
+    height: 100px;
+    filter: drop-shadow(0 0 20px rgba(255,255,255,0.3));
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .businessheading1 {
+        font-weight: 600;
+        font-size: 28px;
+    }
+    
+    .content-wrapper {
+        flex-direction: column;
+        padding: 2rem;
+    }
+    
+    .text-content {
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+    
+     .imglogob {
+        width: 250px;
+    } 
+}
+
+@media (max-width: 425px) {
+    .businessheading1 {
+        font-weight: 600;
+        font-size: 35px;
+    }
+    
+    .content-wrapper {
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+    
+    .text-content {
+        padding-right: 0;
+        margin-bottom: 2rem;
+    }
+    
+    .text-content p {
+        font-size: 16px;
+    }
+    
+    .imglogob {
+        width: 200px;
+    }
+}
+
+.py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
