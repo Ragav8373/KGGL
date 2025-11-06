@@ -11,7 +11,9 @@ import NewMenubar from "./Landingpage/Menubar/NewMenubar"; //new
 import Footer from "./Landingpage/Footer/Footer";
 import Footercard from "./Landingpage/Footercard/Footercard";
 import NewFootercard from "./Landingpage/Footercard/NewFootercard"; //new
-import AboutKggl from "./Aboutsection/AboutKggl/AboutKggl";
+// import AboutKggl from "./Aboutsection/AboutKggl/AboutKggl";
+import NewAboutKggl from "./Aboutsection/AboutKggl/NewAboutKggl"; //new
+
 import NewAboutBanner from "./Aboutsection/AboutBanner/NewAboutBanner";  //new
 
 import Mission from "./Aboutsection/Mission/Mission";
@@ -160,7 +162,8 @@ function App() {
               // <Menubar />,
               <NewMenubar/>,
               <NewAboutBanner/>,
-              <AboutKggl />,
+              // <AboutKggl />,
+              <NewAboutKggl/>,
               <Evolution />,
               <Mission />,
               <Whygeniuslabs />,

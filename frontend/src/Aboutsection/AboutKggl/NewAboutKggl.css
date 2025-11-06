@@ -1,0 +1,207 @@
+.border-wrapperabout {
+  position: relative;
+  width: 100%;
+  max-width: 1150px;
+  margin: 50px auto;
+  /* overflow:inherit; */
+  border-radius: 32px;
+  background: #fff;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Main border effect */
+.border-wrapperabout::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50px;
+  border-top: none;
+  border: 8px solid transparent;
+  background:
+    linear-gradient(white, white) padding-box,
+    conic-gradient(
+      from 90deg at 50% 50%,
+      #1C1559 0deg,
+      #3C2EBF 69.06deg,
+      #ED1C24 230.04deg,
+      #3C2EBF 288.11deg,
+      #1C1559 360deg
+    ) border-box;
+  filter: blur(0.5px);
+  background-size: 300% 300%;
+  animation: glowPulse 3s ease-in-out infinite alternate,
+             gradientShift 10s ease-in-out infinite;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* create a small cut at the top center */
+.border-wrapperabout::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 320px;   /* length of the cut */
+  height: 8px;   /* thickness of the cut */
+  background: white;  /* same as container background */
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+/* Animations */
+@keyframes glowPulse {
+  0% {
+    box-shadow: 0 0 25px rgba(28, 21, 89, 0.3),
+                0 0 35px rgba(60, 46, 191, 0.3),
+                0 0 30px rgba(237, 28, 36, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 60px rgba(28, 21, 89, 0.8),
+                0 0 80px rgba(60, 46, 191, 0.7),
+                0 0 70px rgba(237, 28, 36, 0.8);
+  }
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+
+
+/* Text and layout */
+.newabout-content {
+  position: relative;
+  z-index: 2;
+}
+
+.newabout-title {
+  position: relative;
+  padding: 0 20px;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #372b8a;
+  font-size: 50px;
+  font-weight: 500;
+  margin-top: -105px;
+  z-index: 3; /* stays above the border pseudo-elements */
+}
+
+.newabout-text {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #372b8a;
+  line-height: 1.8;
+  max-width: 984px;
+  margin: 0 auto 70px auto;
+}
+
+
+.newabout-images {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}   
+
+.newabout-images img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+/* .centerimage{
+  width: 350px !important;
+  height: 200px !important;
+  object-fit: cover;
+  overflow: visible;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+} */
+.newstengthtitle{
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 0rem;
+  background: linear-gradient(90deg, #1C1559 15.39%, #3C2EBF 42.31%, #ED1C24 80.76%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.newstengthtext{
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #372b8a;
+  line-height: 1.8;
+ text-align: center;
+ align-items: center;
+ 
+}
+.vertical-lineabout-container {
+  display: flex;
+  align-items: center; 
+  gap: 15px; /* Space between the line and text */
+}
+
+.vertical-lineabout {
+  width: 8px;
+  height: 80px;
+  border-radius: 8px;
+  background: linear-gradient(180deg, #1c1559 0%, #3c2ebf 60%, #ed1c24 100%);
+  transition: all 0.6s ease;
+  
+}
+
+.newstengthsubtitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  background: linear-gradient(90deg, #1C1559 15.39%, #3C2EBF 42.31%, #ED1C24 80.76%);
+  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+.newstengthsubtext{
+  font-size: 1.3rem;
+  font-weight: 500;
+  background: linear-gradient(90deg, #1C1559 15.39%, #3C2EBF 42.31%, #ED1C24 80.76%);
+  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 479px) and (min-width: 375px) {
+  .newabout-title {
+  position: relative;
+  padding: 0 20px;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #372b8a;
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: -105px;
+  z-index: 3; 
+  }}
+@media (max-width: 374px) {
+  .newabout-title{
+  position: relative;
+  padding: 0 20px;
+  text-align: center;
+  font-size: 2.5rem;
+  color: #372b8a;
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: -105px;
+  z-index: 3; 
+  
+  }
+  
+}
