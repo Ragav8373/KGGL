@@ -20,7 +20,8 @@ import Banner from "./Landingpage/Banner/Banner";
 import NewBanner from "./Landingpage/Banner/NewBanner";   //new
 import Ourservices from "./Landingpage/Ourservices/Ourservices";
 import NewOurservices from "./Landingpage/Ourservices/NewOurservices";  //new
-import Whygeniuslabs from "./Aboutsection/Whygeniuslabs/Whygeniuslabs";
+// import Whygeniuslabs from "./Aboutsection/Whygeniuslabs/Whygeniuslabs";
+import NewWhygeniuslabs from "./Aboutsection/Whygeniuslabs/NewWhygeniuslabs"; //new
 import Teamfeatures from "./HRRecruitment/Teamfeatures/Teamfeatures";
 import Bannerhr from "./HRRecruitment/Recruitment/Bannerhr/Bannerhr";
 import Aboutpagehr from "./HRRecruitment/Recruitment/Aboutpage/Aboutpage";
@@ -166,7 +167,8 @@ function App() {
               <Evolution />,
               // <Mission />,
               <NewMissin/>,
-              <Whygeniuslabs />,
+              // <Whygeniuslabs />,
+              <NewWhygeniuslabs/>,
               <NewFootercard />,
               <Footerabout />,
             ]}
