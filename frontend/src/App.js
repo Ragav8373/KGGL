@@ -16,6 +16,7 @@ import NewAboutKggl from "./Aboutsection/AboutKggl/NewAboutKggl"; //new
 import NewAboutBanner from "./Aboutsection/AboutBanner/NewAboutBanner";  //new
 // import Mission from "./Aboutsection/Mission/Mission";
 import NewMissin from "./Aboutsection/Mission/NewMission";  //new
+import NewConnect from "./Aboutsection/Connect/NewConnect";  //new
 import Banner from "./Landingpage/Banner/Banner";
 import NewBanner from "./Landingpage/Banner/NewBanner";   //new
 import Ourservices from "./Landingpage/Ourservices/Ourservices";
@@ -169,6 +170,7 @@ function App() {
               <NewMissin/>,
               // <Whygeniuslabs />,
               <NewWhygeniuslabs/>,
+              <NewConnect/>,
               <NewFootercard />,
               <Footerabout />,
             ]}
