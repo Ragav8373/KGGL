@@ -1,0 +1,101 @@
+.mission-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+}
+
+/* Common card design */
+.mission-card {
+  width: 500px;
+  padding: 40px;
+  color: #fff;
+  border-radius: 2px;
+  background: linear-gradient(135deg, #291571, #4E28D7);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+/* Mission top-left */
+.mission-left {
+  top: 0;
+  left: 8%;
+  z-index: 2;
+}
+
+/* Vision bottom-right */
+.mission-right {
+  bottom: 0;
+  right: 8%;
+  z-index: 1;
+}
+
+/* Text styling */
+.credhead {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.section-para {
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: justify;
+  color: #fff;
+}
+
+
+
+/* Large tablets & small laptops (1024px) */
+@media (max-width: 1024px) {
+  .mission-card {
+    width: 420px;
+  }
+  .mission-left {
+    top: 0;
+    left: 5%;
+  }
+  .mission-right {
+    bottom: 0;
+    right: 5%;
+  }
+}
+
+/* Tablets (max 900px) — reduce overlap */
+@media (max-width: 900px) {
+  .mission-left {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-bottom: 40px;
+  }
+  .mission-right {
+    position: relative;
+    bottom: 0;
+    right: 0;
+  }
+  .mission-wrapper {
+    flex-direction: column;
+    min-height: auto;
+    padding: 40px 0;
+  }
+  .mission-card {
+    width: 90%;
+    position: relative;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .credhead {
+    font-size: 22px;
+  }
+  .section-para {
+    font-size: 15px;
+  }
+}

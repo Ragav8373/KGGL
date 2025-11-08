@@ -1,4 +1,4 @@
-.credhead,
+/* .credhead,
 .abhead {
   white-space: nowrap;
 }
@@ -66,13 +66,13 @@
 
 .missionborder-text {
   -webkit-text-stroke: 1px #98969e !important;
-  /* Purple border color */
+  
   color: transparent;
-  /* Hide the text color */
+  
   padding: 0.5rem;
-  /* Add some padding to adjust the size */
+  
   background-color: transparent;
-  /* Ensure background is transparent */
+ 
 }
 
 
@@ -100,4 +100,4 @@
 
 .mvimg {
   height: 350px;
-}
+} */

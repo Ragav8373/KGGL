@@ -3,7 +3,11 @@
     display: inline-block; 
     font-size: 48px; 
     font-family: 'Proxima Nova', sans-serif;
-    color: #291571;
+    /* color: #291571; */
     font-weight: 400;
+    background: linear-gradient(90deg, #1C1559 15.39%, #3C2EBF 42.31%, #ED1C24 80.76%);
+  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
   }
  
