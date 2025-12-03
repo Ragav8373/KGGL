@@ -108,9 +108,11 @@ import { RedirectToExternal } from "./Landingpage/RedirectToExternal/RedirectToE
 import Erpblogview from "./Erp/Erpblogview/Erpblogview";
 import ERPInsights from "./Erp/ERPInsights/ERPInsights";
 import Dmcertificate from "./DigitalMarketing/DMLandingpage/Dmcertificate/Dmcertificate";
-import Dmabout from "./DigitalMarketing/DMLandingpage/Dmabout/Dmabout";
+// import Dmabout from "./DigitalMarketing/DMLandingpage/Dmabout/Dmabout";
+import NewDmabout from "./DigitalMarketing/DMLandingpage/Dmabout/NewDmabout";
 import Whydm from "./DigitalMarketing/DMLandingpage/Whydm/Whydm";
-import Bannerdm from "./DigitalMarketing/DMLandingpage/Bannerdm/Bannerdm";
+// import Bannerdm from "./DigitalMarketing/DMLandingpage/Bannerdm/Bannerdm";
+import NewBannerdm from "./DigitalMarketing/DMLandingpage/Bannerdm/NewBannerdm";  //New
 import Topperformance from "./DigitalMarketing/DMLandingpage/Topperformance/Topperformance";
 import DMLandingcontact from "./DigitalMarketing/DMLandingpage/DMLandingcontact/DMLandingcontact";
 import DMServices from "./DigitalMarketing/DMLandingpage/DMServices/DMServices";
@@ -221,7 +223,7 @@ function App() {
             path="/digital-marketing-services"
             element={[
               <Menubardm />,
-              <DMBanner />,
+              <DMBanner />, 
               <Dmservice />,
               <Adoptdm />,
               <Dmblog />,
@@ -272,8 +274,10 @@ function App() {
           <Route path="/erp" element={<RedirectToExternal/>}/>
           <Route path="/digital-marketing-services-coimbatore" element={[
               <DMLandingMenubar/>,
-              <Bannerdm />,
-              <Dmabout/>,
+              // <Bannerdm />,
+              <NewBannerdm/>,
+              // <Dmabout/>,
+              <NewDmabout/>,
               <Dmcertificate/>,
               <DMServices/>,
               <Buttonarea/>,
@@ -281,6 +285,7 @@ function App() {
               <Whydm/>,
               <Dmblog />,
               <DMLandingcontact/>,
+              <NewFootercard />,
               // <Footercard />,
               <DMLFoot/>,
             ]}/>
