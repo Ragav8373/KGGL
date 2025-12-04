@@ -1,0 +1,29 @@
+.textbtnarea{
+    color: #ffffff;
+  
+}
+.buttonarea{
+  background: linear-gradient(to right,#291571,#09091B);
+      --bs-gutter-x: 0 !important;
+    --bs-gutter-y: 5px !important;
+    margin: 40px 0;
+
+}
+.contactdmbtn{
+    display: block;
+    width: 250px;
+    height: 60px;
+    line-height: 44px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1C1559;
+    cursor: pointer;
+    border-radius: 60px;
+    border: 8px solid transparent;
+    background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #3C2EBF 16.82%, #ED1C24 100%) border-box;
+    transition: transform 0.3s 
+ease;
+    opacity: 0.9;
+}

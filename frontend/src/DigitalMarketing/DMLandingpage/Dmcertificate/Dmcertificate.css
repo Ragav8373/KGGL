@@ -1,0 +1,17 @@
+.certificatepart{
+  /* background: linear-gradient(to right,#291571,#09091B); */
+  text-align: center;
+  color: #1C1559;
+}
+.certificatepart h2{
+ color: #1C1559;
+ font-weight: 600;
+}
+
+.certificatepart h3{
+  /* background: linear-gradient(to right,#291571,#09091B); */
+  line-height: 3rem;
+     color: #372b8a;
+  font-size: 1.3rem;
+  font-family: 'Proxima Nova', sans-serif !important;
+}

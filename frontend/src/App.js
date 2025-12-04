@@ -110,7 +110,8 @@ import ERPInsights from "./Erp/ERPInsights/ERPInsights";
 import Dmcertificate from "./DigitalMarketing/DMLandingpage/Dmcertificate/Dmcertificate";
 // import Dmabout from "./DigitalMarketing/DMLandingpage/Dmabout/Dmabout";
 import NewDmabout from "./DigitalMarketing/DMLandingpage/Dmabout/NewDmabout";
-import Whydm from "./DigitalMarketing/DMLandingpage/Whydm/Whydm";
+// import Whydm from "./DigitalMarketing/DMLandingpage/Whydm/Whydm";
+import NewWhydm from "./DigitalMarketing/DMLandingpage/Whydm/NewWhydm"; //New
 // import Bannerdm from "./DigitalMarketing/DMLandingpage/Bannerdm/Bannerdm";
 import NewBannerdm from "./DigitalMarketing/DMLandingpage/Bannerdm/NewBannerdm";  //New
 import Topperformance from "./DigitalMarketing/DMLandingpage/Topperformance/Topperformance";
@@ -282,7 +283,8 @@ function App() {
               <DMServices/>,
               <Buttonarea/>,
               <Topperformance/>,
-              <Whydm/>,
+              // <Whydm/>,
+              <NewWhydm/>,
               <Dmblog />,
               <DMLandingcontact/>,
               <NewFootercard />,
