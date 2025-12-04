@@ -114,6 +114,7 @@ import NewDmabout from "./DigitalMarketing/DMLandingpage/Dmabout/NewDmabout";
 import NewWhydm from "./DigitalMarketing/DMLandingpage/Whydm/NewWhydm"; //New
 // import Bannerdm from "./DigitalMarketing/DMLandingpage/Bannerdm/Bannerdm";
 import NewBannerdm from "./DigitalMarketing/DMLandingpage/Bannerdm/NewBannerdm";  //New
+import DmNewContact from "./DigitalMarketing/NewContect/DmNewContact";  // New
 import Topperformance from "./DigitalMarketing/DMLandingpage/Topperformance/Topperformance";
 import DMLandingcontact from "./DigitalMarketing/DMLandingpage/DMLandingcontact/DMLandingcontact";
 import DMServices from "./DigitalMarketing/DMLandingpage/DMServices/DMServices";
@@ -286,7 +287,9 @@ function App() {
               // <Whydm/>,
               <NewWhydm/>,
               <Dmblog />,
-              <DMLandingcontact/>,
+              
+              // <DMLandingcontact/>,
+              <DmNewContact/>,
               <NewFootercard />,
               // <Footercard />,
               <DMLFoot/>,

@@ -1,5 +1,11 @@
 .dmnewwhy{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 0rem;
+    align-items: center;
     text-align: center;
-    justify-content: center;
-    font-weight:600 ;
+    background: linear-gradient(90deg, #1C1559 15.39%, #3C2EBF 42.31%, #ED1C24 58.76%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
