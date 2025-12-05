@@ -1,20 +1,75 @@
-.dmservepart1 {
-  background: linear-gradient(180deg, #1C1559 0%, #3C2EBF 38%, #FF0000 100%);
-  padding: 40px 0;
-  overflow: hidden;
+/* Main card design */
+.dm-card {
+  width: 100%;
+  min-height: 160px;
+  border-radius: 20px;
+  padding: 22px 14px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-.dmservepart1{
-    border: linear-gradient(#1C1559 0%, #3C2EBF 38%, #FF0000 100%);
-    border-radius: 50%;
-    background-color: red;
+/* Icon */
+.dm-card img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+/* Text */
+.dm-card p {
+  font-weight: 600;
+  font-size: 14px;
+  color: #1a1a1a;
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* ============================
+   1️⃣ FULL GRADIENT CARDS
+============================ */
+.dm-gradient {
+  background: linear-gradient(180deg, #1C1559 0%, #3C2EBF 40%, #FF0040 100%);
+  color: #fff;
+}
+
+.dm-gradient p {
+  color: #fff;
+}
+
+/* ============================
+   2️⃣ WHITE CARDS WITH GRADIENT BORDER
+============================ */
+.dm-gradient-border {
+  padding: 3px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, #1C1559, #3C2EBF, #FF0040);
+}
+
+.dm-gradient-border .inner-box {
+  background: #fff;
+  border-radius: 17px;
+  height: 100%;
+  padding: 20px 12px;
+}
+
+/* Mobile views */
+@media (max-width: 576px) {
+  .dm-card {
+    min-height: 140px;
+    padding: 18px 12px;
+  }
+
+  .dm-card img {
+    width: 40px;
+  }
 }
 
 
 
 
 
-
+/* 
 .featurespart .card{
   border: none;
   border-radius: 10px;
@@ -31,4 +86,4 @@
   .featurespart .card{
     height: 250px !important;
   }
-}
+} */
