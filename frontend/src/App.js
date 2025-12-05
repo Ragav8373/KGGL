@@ -42,7 +42,8 @@ import Contactsap from "./Sap/Contactsap/Contactsap";
 import Hrfooter from "./HRRecruitment/Hrfooter/Hrfooter";
 import Footerabout from "./Aboutsection/Footerabout/Footerabout";
 import DMBanner from "./DigitalMarketing/DMBanner";
-import Dmservice from "./DigitalMarketing/Dmservice/Dmservice";
+// import Dmservice from "./DigitalMarketing/Dmservice/Dmservice";
+import NewDMServices from "./DigitalMarketing/DMLandingpage/DMServices/NewDMServices"; //new
 import Adoptdm from "./DigitalMarketing/Adoptdm/Adoptdm";
 import Dmcontact from "./DigitalMarketing/Dmcontact/Dmcontact";
 import Footerdm from "./DigitalMarketing/Footerdm/Footerdm";
@@ -226,7 +227,8 @@ function App() {
             element={[
               <Menubardm />,
               <DMBanner />, 
-              <Dmservice />,
+              // <Dmservice />,
+              <NewDMServices/>,
               <Adoptdm />,
               <Dmblog />,
               <Dmcontact />,
@@ -281,7 +283,8 @@ function App() {
               // <Dmabout/>,
               <NewDmabout/>,
               <Dmcertificate/>,
-              <DMServices/>,
+              // <DMServices/>,
+              <NewDMServices/>,
               <Buttonarea/>,
               <Topperformance/>,
               // <Whydm/>,

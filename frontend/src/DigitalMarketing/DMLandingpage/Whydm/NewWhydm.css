@@ -9,3 +9,186 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.newWhydmh3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0rem;
+    /* align-items: center;
+    text-align: center; */
+    background: linear-gradient(90deg, #1C1559 15.39%, #3C2EBF 42.31%, #ED1C24 58.76%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+
+}
+.dmtextp{
+    color: #1C1559;
+    /* text-align: center; */
+    text-align: center;
+}
+.dmBenefitsoferpcard {
+  position: relative;
+  width: 90%;
+  height: 200px;
+  background:white;   /* your background same as image */
+  border-radius: 0 0 1.8rem  1.8rem ;
+  overflow: hidden;
+}
+
+.dmBenefitsoferpcard::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  
+  /* 3-side gradient border EXACT like image */
+  border-left: 4px solid #1C1559;
+  border-right: 4px solid #1C1559;
+  border-bottom: 4px solid #1C1559;
+
+  /* No top border */
+  border-top: none;
+
+  /* subtle glowing gradient (same as image) */
+  box-shadow: 0 0 25px rgba(53, 44, 214, 0.4);
+
+  pointer-events: none;
+}
+.dmBenefitsoferpcard1 {
+  position: relative;
+  width: 90%;
+  height: 200px;
+  background:white;   /* your background same as image */
+  border-radius: 1.8rem  1.8rem 0 0 ;
+  overflow: hidden;
+}
+
+.dmBenefitsoferpcard1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  
+  /* 3-side gradient border EXACT like image */
+  border-left: 4px solid #1C1559;
+  border-right: 4px solid #1C1559;
+  border-top: 4px solid #1C1559;
+
+  /* No top border */
+  border-bottom: none;
+
+  /* subtle glowing gradient (same as image) */
+  box-shadow: 0 0 25px rgba(53, 44, 214, 0.4);
+
+  pointer-events: none;
+}
+
+
+
+
+/* =====================================================
+   TABLET RESPONSIVE (577px–770px, including 720px)
+   ===================================================== */
+@media (min-width: 577px) and (max-width: 770px) {
+
+  /* Section title */
+  .dmnewwhy {
+    font-size: 28px;
+    margin-top: 1.8rem;
+    margin-bottom: 1rem;
+    line-height: 1.3;
+  }
+
+  /* Headings inside cards */
+  .newWhydmh3 {
+    font-size: 20px;
+    line-height: 1.3;
+    padding: 0 10px;
+  }
+
+  /* Paragraph text */
+  .dmtextp {
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0 20px;
+  }
+
+  /* Card Size — perfect centered layout */
+  .dmBenefitsoferpcard,
+  .dmBenefitsoferpcard1 {
+    width: 95% !important;
+    height: auto;
+    padding: 25px 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Adjust spacing between rows */
+  .py-4 {
+    padding-top: 1.2rem !important;
+    padding-bottom: 1.2rem !important;
+  }
+
+  /* Fix card spacing inside row */
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .col {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  /* Fix large margin on top headings */
+  .dmBenefitsoferpcard1 h3 {
+    margin-top: 18px !important;
+  }
+}
+
+@media (max-width: 576px) {
+
+  /* Force all columns to behave like col-12 */
+  .row > .col,
+  .row > [class*="col-"] {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Fix card width */
+  .dmBenefitsoferpcard,
+  .dmBenefitsoferpcard1 {
+    width: 100% !important;
+    height: auto;
+    padding: 20px 10px;
+    margin: auto;
+  }
+
+  /* Title Text */
+  .dmnewwhy {
+    font-size: 24px;
+    margin-top: 1.5rem;
+  }
+
+  /* Card Heading */
+  .newWhydmh3 {
+    font-size: 18px;
+    padding: 0 10px;
+    line-height: 1.3;
+  }
+
+  /* Paragraph */
+  .dmtextp {
+    font-size: 14px;
+    padding: 0 15px;
+    line-height: 1.4;
+  }
+
+  /* Reduce spacing */
+  .py-4 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+
+}
