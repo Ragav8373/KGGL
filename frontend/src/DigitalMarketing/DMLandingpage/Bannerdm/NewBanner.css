@@ -15,9 +15,7 @@
   cursor: pointer;
   border-radius: 60px;
   border: 8px solid transparent;
-  background: 
-    linear-gradient(white, white) padding-box,
-    linear-gradient(90deg, #3C2EBF 16.82%, #ED1C24 100%) border-box;
+  background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #DFDDF4 0%, #3C2EBF 100%) border-box;
   transition: transform 0.3s ease;
   opacity: 0.9;
   

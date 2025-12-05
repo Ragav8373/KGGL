@@ -34,7 +34,8 @@ const [modalShow, setModalShow] = useState(false);
      
   <h3 className="textbtnarea">Don't Let Your Competitors Win Online</h3>
   <h3 className="textbtnarea">Elevate Your Brand with KG Genius Labs Digital Marketing!</h3>
-  <button className="contactdmbtn " onClick={() => setModalShow(true)} >
+
+  <button className="contactdmbtn mt-3" onClick={() => setModalShow(true)} >
     Get Expert Advice
   </button>
   

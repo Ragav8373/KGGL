@@ -22,8 +22,46 @@
     cursor: pointer;
     border-radius: 60px;
     border: 8px solid transparent;
-    background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #3C2EBF 16.82%, #ED1C24 100%) border-box;
+    background: linear-gradient(white, white) padding-box, linear-gradient(90deg, #DFDDF4 0%, #3C2EBF 100%) border-box;
     transition: transform 0.3s 
 ease;
     opacity: 0.9;
+}
+@media (max-width: 768px) {
+
+  .buttonarea{
+    margin: 20px 0;
+    padding: 10px 0;
+  }
+
+  .contactdmbtn{
+    width: 100%;
+    max-width: 300px;
+    height: 55px;
+    line-height: 40px;
+    font-size: 18px;
+    margin: 0 auto; /* center button */
+    border-width: 6px;
+  }
+
+  .textbtnarea{
+    font-size: 16px;
+    text-align: center;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .contactdmbtn{
+    width: 100%;
+    max-width: 260px;
+    height: 50px;
+    line-height: 36px;
+    font-size: 16px;
+  }
+
+  .textbtnarea{
+    font-size: 15px;
+  }
 }

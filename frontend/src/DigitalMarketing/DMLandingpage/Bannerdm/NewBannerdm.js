@@ -23,7 +23,7 @@ function NewBannerdm() {
                 to="ERPcontact" 
                 smooth={true} 
                 duration={500} 
-                className="bookbtn mt-2"
+                className="bookbtn mt-3"
               >
                 Request a Demo
               </ScrollLink>
